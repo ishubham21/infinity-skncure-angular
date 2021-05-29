@@ -12,6 +12,8 @@ import { environment } from '../environments/environment';
 import { LoginComponent } from './customComponents/login/login.component';
 import { DashboardComponent } from './customComponents/dashboard/dashboard.component';
 
+import { AuthService } from "../app/services/auth.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,7 @@ import { DashboardComponent } from './customComponents/dashboard/dashboard.compo
     AngularFireAuthModule,
     AngularFirestoreModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
