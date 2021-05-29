@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+.google-btn {
+  width: 184px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+  cursor: pointer;
+}
+.google-btn:hover {
+    box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+    background: #1669F2;
+}
+.google-btn .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.google-btn .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+}
+.google-btn .btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+}
+
+.login-wrapper{
+	margin: 0;
+	padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    max-height: 100vh;
+}
+.infinity-logo{
+    max-width: 100%;
+}
+.row{
+	height: 100%;
+}
+.row .content-side{
+	position: relative;
+}
+.row .content-side .google_login {
+    height: 10rem;
+    position: relative;
+}
+.doc-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 40%;
+    height: auto;
+}
+.doc-img img{
+    width: 100%;
+    max-width: 100%;
+}
+.bg-png{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 80%;
+    height: auto;
+}
+.bg-png img{
+    width: 100%;
+    max-width: 100%;
+}
+.social_logins{
+    position: absolute;
+    bottom: 47px;
+}
+
+.row .image-side {
+	background-color: #000;
+}
+.row .image-side .text-under-logo{
+    font-size: 4.4em;
+    font-weight: 200;
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+@media (max-width: 991px){
+    .bg-png{
+        width: 100%;
+    }
+    .doc-img{
+        width: 50%;
+    }
+    .social_logins{
+        bottom: 65px;
+    }
+}
