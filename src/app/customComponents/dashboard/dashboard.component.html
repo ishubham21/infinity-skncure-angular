@@ -1,5 +1,14 @@
-<ul>
-    Todo:
-    <li>Log-Out</li>
-    <li>Sharing user data from auth.service.ts to all the components</li>
-</ul>
+<!-- Show user data when logged in -->
+
+<!--If user exists, show his/her details-->
+<div class="row" *ngIf="authService.userData as user">
+    <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
+    <p>User ID: <strong>{{user.uid}}</strong></p>
+    <p>Email: <strong>{{user.email}}</strong></p>
+
+    <!--Logout functionality-->
+    <a class="nav-link" (click)="authService.logout()">
+        <i class="fas fa-sign-out-alt"></i>Log out
+    </a>
+</div>
+
