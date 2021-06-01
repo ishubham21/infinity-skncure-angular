@@ -4,22 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
 import { LoginComponent } from './customComponents/login/login.component';
 import { DashboardComponent } from './customComponents/dashboard/dashboard.component';
 
-import { AuthService } from "../app/services/auth.service";
+import { AuthService } from '../app/services/auth.service';
+import { AuthGuard } from './services/auth-guard.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    DashboardComponent
-  ],
+  declarations: [AppComponent, LoginComponent, DashboardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,7 +24,7 @@ import { AuthService } from "../app/services/auth.service";
     AngularFireAuthModule,
     AngularFirestoreModule,
   ],
-  providers: [AuthService],
-  bootstrap: [AppComponent]
+  providers: [AuthService, AuthGuard],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
