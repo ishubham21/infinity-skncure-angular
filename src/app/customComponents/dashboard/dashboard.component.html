@@ -2,7 +2,7 @@
 <app-profile [profileNavStatus]="profileNavStatus" (profileClosed)="closeProfileNav($event)"></app-profile>
 
 <!--If user exists, show his/her details-->
-<div class="row" *ngIf="authService.userData as user">
+<div class="row top-row" *ngIf="authService.userData as user">
 
     <section class="f-body">
         <div class="row">

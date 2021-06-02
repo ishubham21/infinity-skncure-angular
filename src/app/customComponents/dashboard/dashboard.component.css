@@ -2,6 +2,9 @@
 svg{
     z-index: -2;
 }
+.top-row{
+    overflow-x: hidden;
+}
 .topbar-text{
     color: #fff;
     text-align: center;
@@ -48,6 +51,7 @@ svg{
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 2px 3px 2px #ddd;
+    text-align: center;
 }
 .tool:focus, .tool:active, .tool:hover{
     background-color: #ff5780;
