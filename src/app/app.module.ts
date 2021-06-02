@@ -14,9 +14,10 @@ import { DashboardComponent } from './customComponents/dashboard/dashboard.compo
 
 import { AuthService } from '../app/services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
+import { ProfileComponent } from './customComponents/profile/profile.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, DashboardComponent],
+  declarations: [AppComponent, LoginComponent, DashboardComponent, ProfileComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

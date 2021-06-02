@@ -1,4 +1,5 @@
 <!-- Show user data when logged in -->
+<app-profile [profileNavStatus]="profileNavStatus" (profileClosed)="closeProfileNav($event)"></app-profile>
 
 <!--If user exists, show his/her details-->
 <div class="row" *ngIf="authService.userData as user">
@@ -11,4 +12,6 @@
         <i class="fas fa-sign-out-alt"></i>Log out
     </a>
 </div>
+
+<button class="btn btn-primary" (click)="openProfileNav()">Toggle Profile nav</button>
 

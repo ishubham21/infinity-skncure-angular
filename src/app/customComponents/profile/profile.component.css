@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #ff5780;
+  overflow-x: hidden;
+  transition: all;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sidenavWidth {
+  width: 250px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  padding: 1rem 1rem 1rem 2.5rem;
+}
+.sidenav div:first-child {
+  padding-top: 5rem;
+}
+.closebtn {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  font-size: 2rem !important;
+}
+.profile-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 20%;
+}
+.profile-name {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: white;
+}
+.profile-name span {
+  font-weight: 500;
+}
+.profile-logout {
+  position: fixed;
+  bottom: 7%;
+  right: 2rem;
+  color: #ffff;
+  cursor: pointer;
+}

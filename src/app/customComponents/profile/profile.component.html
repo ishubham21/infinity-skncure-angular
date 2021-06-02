@@ -1,0 +1,18 @@
+<div class="sidenav" id="mySidenav" [ngClass]="{sidenavWidth: profileNavStatus===true}">
+    <a class="closebtn" (click)="closeProfileNav()">
+        &times;
+    </a>
+    <div>
+        <div class="text-center mt-2">
+            <img src="https://nwsid.net/wp-content/uploads/2015/05/dummy-profile-pic.png" class="profile-image" width="20px">
+        </div>
+        <div class="text-center profile-name">
+            Hello, <br><span *ngIf="authService.userData as user">
+                {{(user.displayName) ? user.displayName : 'User'}}
+            </span>
+        </div>
+        <div class="profile-logout text-center"  (click)="authService.logout()">
+            Logout
+        </div>
+    </div>
+</div>
