@@ -3,15 +3,55 @@
 
 <!--If user exists, show his/her details-->
 <div class="row" *ngIf="authService.userData as user">
-    <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
-    <p>User ID: <strong>{{user.uid}}</strong></p>
-    <p>Email: <strong>{{user.email}}</strong></p>
 
-    <!--Logout functionality-->
-    <a class="nav-link" (click)="authService.logout()">
-        <i class="fas fa-sign-out-alt"></i>Log out
-    </a>
+    <section class="f-body">
+        <div class="row">
+            <div class="main-section">
+                <div class="content">
+                    <div class="topbar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
+                            <path fill="#6794ef" fill-opacity="1"
+                                d="M0,64L60,101.3C120,139,240,213,360,229.3C480,245,600,203,720,170.7C840,139,960,117,1080,122.7C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                            </path>
+                        </svg>
+                        <h3 class="topbar-text">Hello, {{(user.displayName) ? user.displayName : 'User'}}</h3>
+                    </div>
+                    <div class="toolbar">
+                        <h4 class="toolbar-top text-center">Infinity Tools</h4>
+                        <div class="tool-box d-flex container">
+                            <div class="tool">
+                                <i class="fa fa-home"></i>
+                                <p>Tool Name</p>
+                            </div>
+                            <div class="tool">
+                                <i class="fa fa-home"></i>
+                                <p>Tool Name</p>
+                            </div>
+                            <div class="tool">
+                                <i class="fa fa-home"></i>
+                                <p>Tool Name</p>
+                            </div>
+                            <div class="tool">
+                                <i class="fa fa-home"></i>
+                                <p>Tool Name</p>
+                            </div>
+                            <div class="tool">
+                                <i class="fa fa-home"></i>
+                                <p>Tool Name</p>
+                            </div>
+                            <div class="tool">
+                                <i class="fa fa-home"></i>
+                                <p>Tool Name</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" (click)="openProfileNav()">Toggle Profile nav</button>
+    </section>
+
 </div>
 
-<button class="btn btn-primary" (click)="openProfileNav()">Toggle Profile nav</button>
 

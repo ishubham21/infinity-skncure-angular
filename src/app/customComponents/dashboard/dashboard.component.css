@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+.topbar-text{
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+.topbar{
+    position: relative;
+}
+.tool-box{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.toolbar-top{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.fa{
+    font-size: 45px!important;
+}
+.tool p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.tool{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    flex: 0 0 20%;
+    margin: 25px 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 2px 3px 2px #ddd;
+}
+.tool:focus, .tool:active, .tool:hover{
+    background-color: #ff5780;
+    color: #fff;
+}
+.f-body{
+    height: 100vh;
+    font-family: 'Montserrat';
+}
+.bottom-bar .d-flex i:hover{
+    color: #6794EF;
+}
+.bottom-bar .d-flexi:active{
+    color: #6794EF;
+}
+
+@media (max-width: 762px) {    
+    .toolbar-top{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .tool{
+        flex: 0 0 40%!important;
+        margin: 10px;
+        text-align: center;
+        padding: 15px;
+        font-size: 14px;
+        box-shadow: 1px 1px 1px #ddd;
+        border-radius: 8px;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    svg{
+        transform: scale(3) translate(40px)!important;
+    }
+    .topbar-text{
+        top: 75%;
+        left: 25%;
+    }
+    .toolbar{
+        margin-top: 80px!important;
+    }
+    .fa{
+        margin-top: 15px;
+        font-size: 60px!important;
+    }    
+}
+
+@media (max-width: 991px){
+    .tool{
+        flex: 0 0 30%;
+    }
+    .toolbar{
+        margin-top: 40px;
+    }
+    svg{
+        transform: scale(1.5);
+    }
+}
+
+
+

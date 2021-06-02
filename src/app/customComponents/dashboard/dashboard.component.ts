@@ -10,7 +10,7 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  @Output() profileNavStatus: boolean = true;
+  @Output() profileNavStatus: boolean = false;
 
   constructor(public authService: AuthService) {}
 
