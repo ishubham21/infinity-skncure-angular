@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import * as p5 from 'p5'
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import * as p5 from 'p5';
+import { AuthService } from '../../services/auth.service';
 // import "node_modules/p5/lib/addons/p5.";
 // import "p5/lib/addons/p5.sound";
 // import * as ml5 from "ml5";
@@ -14,18 +15,24 @@ declare const ml5: any
 })
 export class RealTimeDetectionComponent implements OnInit {
 
+  @ViewChild('classificationCanvas') classificationCanvas!: ElementRef;
+
   //variables to be used by p5.js
   video: any
   classifier: any
   label: string = "Waiting..."
   constraints: any = { video: { mandatory: { minWidth: 500, minHeight: 500 } } }
 
-  constructor() { }
+  constructor(public authService: AuthService) { }
 
   ngOnInit(): void {
 
+  }
+
+  ngAfterViewInit() {
+
     //callback function that prints results for each frame got from classifyVideo()
-    const gotResults = (error:any, results: any) => {
+    const gotResults = (error: any, results: any) => {
       if (error) {
         console.error(error)
         return
@@ -54,6 +61,7 @@ export class RealTimeDetectionComponent implements OnInit {
 
         //a canvas which would fit the video for results
         p5.createCanvas(640, 520)
+
         // Create the video - using the webcam
         this.video = p5.createCapture(this.constraints)
         this.video.hide()
@@ -74,14 +82,25 @@ export class RealTimeDetectionComponent implements OnInit {
         p5.textSize(32)
 
         // p5.textAlign(CENTER,CENTER)
-        
+
         p5.fill(255)
         p5.text(this.label, 230, 480)
       };
     }
 
     //sending all the constrains & function to p5 module
-    let canvas = new p5(sketch);
+    if(this.classificationCanvas.nativeElement){
+      let canvas
+
+      if (!canvas) {
+        canvas = new p5(sketch, this.classificationCanvas.nativeElement);
+      }
+    }
+    
+  }
+
+  ngOndestroy() {
+    this.classificationCanvas.nativeElement.remove();
   }
 
 }

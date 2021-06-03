@@ -60,19 +60,13 @@ svg{
     box-shadow: 2px 3px 2px #ddd;
     text-align: center;
 }
-.tool:focus, .tool:active, .tool:hover{
+.tool:focus, .tool:hover{
     background-color: #ff5780;
     color: #fff;
 }
 .f-body{
     height: 100vh;
     font-family: 'Montserrat';
-}
-.bottom-bar .d-flex i:hover{
-    color: #6794EF;
-}
-.bottom-bar .d-flexi:active{
-    color: #6794EF;
 }
 
 @media (max-width: 762px) {    
