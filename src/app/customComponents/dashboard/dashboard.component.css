@@ -2,6 +2,13 @@
 svg{
     z-index: -2;
 }
+.f-body{
+    padding: 0;
+    overflow-x: hidden;
+}
+.f-body .row{
+    overflow-x: hidden;
+}
 .top-row{
     overflow-x: hidden;
 }
@@ -28,7 +35,7 @@ svg{
     font-weight: 700;
     margin-bottom: 20px;
 }
-.fa{
+.dash-icon{
     font-size: 45px!important;
 }
 .tool p{
@@ -95,7 +102,7 @@ svg{
     .toolbar{
         margin-top: 80px!important;
     }
-    .fa{
+    .dash-icon{
         margin-top: 15px;
         font-size: 60px!important;
     }    
