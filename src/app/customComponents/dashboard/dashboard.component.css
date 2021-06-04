@@ -2,6 +2,16 @@
 svg{
     z-index: -2;
 }
+.f-body{
+    padding: 0;
+    overflow-x: hidden;
+}
+.f-body .row{
+    overflow-x: hidden;
+}
+.top-row{
+    overflow-x: hidden;
+}
 .topbar-text{
     color: #fff;
     text-align: center;
@@ -25,7 +35,7 @@ svg{
     font-weight: 700;
     margin-bottom: 20px;
 }
-.fa{
+.dash-icon{
     font-size: 45px!important;
 }
 .tool p{
@@ -48,20 +58,15 @@ svg{
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 2px 3px 2px #ddd;
+    text-align: center;
 }
-.tool:focus, .tool:active, .tool:hover{
+.tool:focus, .tool:hover{
     background-color: #ff5780;
     color: #fff;
 }
 .f-body{
     height: 100vh;
     font-family: 'Montserrat';
-}
-.bottom-bar .d-flex i:hover{
-    color: #6794EF;
-}
-.bottom-bar .d-flexi:active{
-    color: #6794EF;
 }
 
 @media (max-width: 762px) {    
@@ -91,7 +96,7 @@ svg{
     .toolbar{
         margin-top: 80px!important;
     }
-    .fa{
+    .dash-icon{
         margin-top: 15px;
         font-size: 60px!important;
     }    

@@ -2,7 +2,7 @@
 <app-profile [profileNavStatus]="profileNavStatus" (profileClosed)="closeProfileNav($event)"></app-profile>
 
 <!--If user exists, show his/her details-->
-<div class="row" *ngIf="authService.userData as user">
+<div class="row top-row" *ngIf="authService.userData as user">
 
     <section class="f-body">
         <div class="row">
@@ -19,28 +19,28 @@
                     <div class="toolbar">
                         <h4 class="toolbar-top text-center">Infinity Tools</h4>
                         <div class="tool-box d-flex container">
+                            <div class="tool" [routerLink]="['/real-time']" routerLinkActive="router-link-active" >
+                                <i class="far fa-clock dash-icon"></i>
+                                <p>Real Time</p>
+                            </div>
                             <div class="tool">
-                                <i class="fa fa-home"></i>
+                                <i class="fa fa-home dash-icon"></i>
                                 <p>Tool Name</p>
                             </div>
                             <div class="tool">
-                                <i class="fa fa-home"></i>
+                                <i class="fa fa-home dash-icon"></i>
                                 <p>Tool Name</p>
                             </div>
                             <div class="tool">
-                                <i class="fa fa-home"></i>
+                                <i class="fa fa-home dash-icon"></i>
                                 <p>Tool Name</p>
                             </div>
                             <div class="tool">
-                                <i class="fa fa-home"></i>
+                                <i class="fa fa-home dash-icon"></i>
                                 <p>Tool Name</p>
                             </div>
                             <div class="tool">
-                                <i class="fa fa-home"></i>
-                                <p>Tool Name</p>
-                            </div>
-                            <div class="tool">
-                                <i class="fa fa-home"></i>
+                                <i class="fa fa-home dash-icon"></i>
                                 <p>Tool Name</p>
                             </div>
     
