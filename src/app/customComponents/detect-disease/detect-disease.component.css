@@ -1,0 +1,47 @@
+.mat-form-field {
+    margin: 40px 0;
+}
+
+.mat-toolbar-single-row {
+    height: auto !important;
+    background: transparent;
+}
+
+.mat-toolbar-single-row button {
+    width: 200px;
+}
+
+.mat-form-field {
+    width: 80%;
+}
+
+#uploadFile {
+    top: 0px;
+    left: 0px;
+    width: 100%;    
+    z-index: 9;
+    opacity: 0;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: center;
+}
+.card-footer img{
+    max-width: 50%;
+    width: 50%;
+}
+.predict-btn-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+@media (max-width: 1024px){
+    .card-footer img{
+        max-width: 95%;
+        width: 95%;
+    }
+}

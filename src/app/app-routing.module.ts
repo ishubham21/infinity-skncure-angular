@@ -7,6 +7,7 @@ import { RealTimeDetectionComponent } from './customComponents/real-time-detecti
 import { PostsComponent } from './customComponents/posts/posts.component';
 import { PostItemComponent } from './customComponents/posts/post-item/post-item.component';
 import { NewPostComponent } from './customComponents/posts/new-post/new-post.component';
+import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   { path: 'real-time', component: RealTimeDetectionComponent },
+  { path: 'upload-image', component: DetectDiseaseComponent },
   {
     path: 'posts',
     component: PostsComponent,
