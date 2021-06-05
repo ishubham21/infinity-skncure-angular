@@ -1,0 +1,10 @@
+.heart {
+  fill: white;
+  width: 1.2rem;
+}
+.card-button {
+  background-color: #1d4e89;
+  color: white;
+  display: flex;
+  align-items: center;
+}

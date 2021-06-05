@@ -17,9 +17,12 @@ import { AuthGuard } from './services/auth-guard.service';
 import { ProfileComponent } from './customComponents/profile/profile.component';
 import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
 import { RealTimeDetectionComponent } from './customComponents/real-time-detection/real-time-detection.component';
+import { PostsComponent } from './customComponents/posts/posts.component';
+import { PostItemComponent } from './customComponents/posts/post-item/post-item.component';
+import { NewPostComponent } from './customComponents/posts/new-post/new-post.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, DashboardComponent, ProfileComponent, DetectDiseaseComponent, RealTimeDetectionComponent],
+  declarations: [AppComponent, LoginComponent, DashboardComponent, ProfileComponent, DetectDiseaseComponent, RealTimeDetectionComponent, PostsComponent, PostItemComponent, NewPostComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

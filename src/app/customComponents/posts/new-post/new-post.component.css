@@ -1,0 +1,54 @@
+.posts-header {
+  min-height: 15rem;
+  background-color: #faf9f9;
+  display: flex;
+  align-items: center;
+}
+.header-para {
+  width: 35vw;
+  margin-top: 1.5rem;
+}
+.posts-header .text-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.upload-button {
+  height: 50px;
+  width: 250px;
+  border: none;
+  color: #fff;
+}
+
+.upload-button:focus {
+  outline: none;
+}
+
+.upload-icon {
+  background-color: #1d4e89;
+  width: 60px;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: white 1px solid;
+}
+
+.upload-text {
+  background-color: #1d4e89;
+  height: 100%;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .posts-header {
+    min-height: 12rem;
+  }
+  .header-para {
+    width: 40vw;
+  }
+}

@@ -14,7 +14,7 @@
                                 d="M0,64L60,101.3C120,139,240,213,360,229.3C480,245,600,203,720,170.7C840,139,960,117,1080,122.7C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
                             </path>
                         </svg>
-                        <h3 class="topbar-text">Hello, {{(user.displayName) ? user.displayName : 'User'}}</h3>
+                        <h3 class="topbar-text">Beauty is being comfortable and confident in your own skin.</h3>
                     </div>
                     <div class="toolbar">
                         <h4 class="toolbar-top text-center">Infinity Tools</h4>
@@ -23,9 +23,9 @@
                                 <i class="far fa-clock dash-icon"></i>
                                 <p>Real Time</p>
                             </div>
-                            <div class="tool">
+                            <div class="tool" [routerLink]="['/posts']" routerLinkActive="router-link-active">
                                 <i class="fa fa-home dash-icon"></i>
-                                <p>Tool Name</p>
+                                <p>Infinity Community</p>
                             </div>
                             <div class="tool">
                                 <i class="fa fa-home dash-icon"></i>
