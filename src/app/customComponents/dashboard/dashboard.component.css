@@ -2,38 +2,9 @@
 svg {
   z-index: -2;
 }
-.f-body {
-  padding: 0;
-  overflow-x: hidden;
-}
-.f-body .row {
-  overflow-x: hidden;
-}
-.top-row {
-  overflow-x: hidden;
-}
-.topbar-text {
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  width: 100%;
-  z-index: 0;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.topbar {
-  position: relative;
-}
 .tool-box {
   flex-wrap: wrap;
   justify-content: center;
-}
-.toolbar-top {
-  font-size: 35px;
-  font-weight: 700;
-  margin-bottom: 20px;
 }
 .dash-icon {
   font-size: 45px !important;
@@ -65,10 +36,6 @@ svg {
   background-color: #ff5780;
   color: #fff;
 }
-.f-body {
-  height: 100vh;
-  font-family: "Montserrat";
-}
 
 @media (max-width: 762px) {
   .toolbar-top {
@@ -87,30 +54,10 @@ svg {
     box-shadow: 1px 1px 1px #ddd;
     border-radius: 8px;
   }
-  .container {
-    padding: 0;
-    margin: 0;
-  }
-  svg {
-    transform: scale(3) translate(40px) !important;
-  }
-  .toolbar {
-    margin-top: 80px !important;
-  }
-  .dash-icon {
-    margin-top: 15px;
-    font-size: 60px !important;
-  }
 }
 
 @media (max-width: 991px) {
   .tool {
     flex: 0 0 30%;
-  }
-  .toolbar {
-    margin-top: 40px;
-  }
-  svg {
-    transform: scale(1.5);
   }
 }
