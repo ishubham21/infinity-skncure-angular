@@ -31,9 +31,10 @@ import { PostItemComponent } from './customComponents/posts/post-item/post-item.
 import { NewPostComponent } from './customComponents/posts/new-post/new-post.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { ResultPopupComponent } from './customComponents/detect-disease/result-popup/result-popup.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, DashboardComponent, ProfileComponent, DetectDiseaseComponent, RealTimeDetectionComponent, PostsComponent, PostItemComponent, NewPostComponent],
+  declarations: [AppComponent, LoginComponent, DashboardComponent, ProfileComponent, DetectDiseaseComponent, RealTimeDetectionComponent, PostsComponent, PostItemComponent, NewPostComponent, ResultPopupComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -51,6 +52,7 @@ import { FormsModule } from '@angular/forms';
     MatProgressBarModule,
     MatDialogModule
   ],
+  entryComponents: [ResultPopupComponent],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
