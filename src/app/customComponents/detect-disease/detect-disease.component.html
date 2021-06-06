@@ -19,11 +19,12 @@
     </div>
 
     <div class="card-footer">
-        <img src="{{dataimage}}">
+        <img src="{{dataimage}}" #previewImg>
     </div>
 
     <div *ngIf="dataimage" class="predict-btn-div">
-        <button mat-flat-button color="primary">
+        <!--Emitting the event on click-->
+        <button mat-flat-button color="primary" (click)="predictEvt.emit()">
             Predict
         </button>
     </div>
