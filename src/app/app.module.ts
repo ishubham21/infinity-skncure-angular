@@ -40,6 +40,7 @@ import { MyPostsComponent } from './customComponents/posts/my-posts/my-posts.com
 import { ResultPopupComponent } from './customComponents/detect-disease/result-popup/result-popup.component';
 import { DarkCirclesComponent } from './customComponents/dark-circles/dark-circles.component';
 import { DialogPopupComponent } from './customComponents/dark-circles/dialog-popup/dialog-popup.component';
+import { TipsComponent } from './customComponents/tips/tips.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { DialogPopupComponent } from './customComponents/dark-circles/dialog-pop
     ResultPopupComponent,
     DarkCirclesComponent,
     DialogPopupComponent,
+    TipsComponent,
   ],
   imports: [
     BrowserModule,
