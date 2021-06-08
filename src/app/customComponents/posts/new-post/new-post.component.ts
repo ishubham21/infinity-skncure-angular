@@ -48,6 +48,7 @@ export class NewPostComponent implements OnInit {
     }
 
     ref.getDownloadURL().subscribe((url) => {
+      console.log(url);
       this.post.img = url;
       this.postsService.addPost(this.post);
     });

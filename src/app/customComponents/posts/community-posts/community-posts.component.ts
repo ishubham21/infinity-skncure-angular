@@ -9,6 +9,7 @@ import { PostsService } from '../services/posts.service';
 })
 export class CommunityPostsComponent implements OnInit {
   posts: Post[] = [];
+  myPost: boolean = false;
 
   constructor(private postsService: PostsService) {}
 

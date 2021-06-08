@@ -9,11 +9,13 @@ import { PostsService } from '../services/posts.service';
 })
 export class MyPostsComponent implements OnInit {
   posts: any = [];
+  myPost: boolean = true;
 
   constructor(private postService: PostsService) {}
 
   ngOnInit(): void {
-    // this.posts = this.postService.getMyPosts();
-    // console.log(this.posts);
+    this.postService.getMyPosts().subscribe((posts) => {
+      this.posts = posts;
+    });
   }
 }

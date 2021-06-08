@@ -20,6 +20,7 @@ export class PostItemComponent implements OnInit {
     userName: 'User',
   };
   @Input() index: number = 0;
+  @Input() myPost: boolean = false;
 
   constructor(private postService: PostsService) {}
 

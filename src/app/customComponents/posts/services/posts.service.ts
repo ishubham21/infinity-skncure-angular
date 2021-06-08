@@ -35,17 +35,29 @@ export class PostsService {
     return this.posts;
   }
 
-  // getMyPosts() {
-  //   // return this.postsCollection.ref.where(
-  //   //   'owner',
-  //   //   '==',
-  //   //   this.authService.userData.uid
-  //   // );
-  //   // return this.authService.userData.uid;
-  //   return this.afs.collection('posts', (ref) =>
-  //     ref.where('owner', '==', this.authService.userData.uid)
-  //   );
-  // }
+  getMyPosts() {
+    // return this.postsCollection.ref.where(
+    //   'owner',
+    //   '==',
+    //   this.authService.userData.uid
+    // );
+    // return this.authService.userData.uid;
+    this.posts = this.afs
+      .collection('posts', (ref) =>
+        ref.where('owner', '==', this.authService.userData.uid)
+      )
+      .snapshotChanges()
+      .pipe(
+        map((actions) =>
+          actions.map((a) => {
+            const data = a.payload.doc.data() as Post;
+            data.id = a.payload.doc.id;
+            return data;
+          })
+        )
+      );
+    return this.posts;
+  }
 
   addPost(post: Post) {
     post.userName = this.authService.userData.displayName;
