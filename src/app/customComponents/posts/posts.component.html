@@ -1,40 +1,37 @@
+<div class="add-post" [routerLink]="['/new']">
+    <i class="fa fa-plus"></i>
+</div>
 <section>
     <article class=" posts-header">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h2>Infinity Community</h2>
+                    <div class="mat-display-2">Infinity Community</div>
                     <p class="text-muted header-para">Sharing your experiences can help you find your voice. By, "Giving it away" you can use your own journey as a means to help others on theirs.</p>
                 </div>
             </div>
         </div>
     </article>
-    <div class="container">
         <div class="row">
             <div class="col">
-                <div class="nav central-navigation mx-auto mt-5">
-                    <div id="company-tab" class="navigation-tab active" routerLink="/posts" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <div class="central-navigation mx-auto mt-5">
+                    <div class="navigation-tab active" routerLink="/posts" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                         <a>
                             Community
                         </a>
                     </div>
-                    <div id="gallery-tab" class="navigation-tab" [routerLink]="['me']" routerLinkActive="active">
+                    <div class="navigation-tab" [routerLink]="['me']" routerLinkActive="active">
                         <a>My Posts</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="add-post" [routerLink]="['/new']">
-        <i class="fa fa-plus"></i>
-    </div>
 </section>
 <section>
     <article>
         <div class="container">
-            <div class="row">
                 <router-outlet></router-outlet>
-            </div>
         </div>
     </article>
+    
 </section>

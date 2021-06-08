@@ -1,12 +1,28 @@
+.row {
+  --bs-gutter-x: 0 !important;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding: 0;
+}
 .posts-header {
+  width: 100%;
   min-height: 15rem;
   background-color: #faf9f9;
   display: flex;
   align-items: center;
 }
+.mat-display-2,
+.mat-typography .mat-display-2 {
+  margin-bottom: 1.5rem !important;
+}
 .header-para {
   width: 35vw;
-  margin-top: 1.5rem;
 }
 .posts-header .text-center {
   display: flex;
@@ -19,6 +35,7 @@
   background-color: #1d4e89;
   color: white;
   position: fixed;
+  z-index: 1;
   bottom: 5%;
   right: 3%;
   border-radius: 50%;

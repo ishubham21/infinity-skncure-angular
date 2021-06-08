@@ -5,9 +5,10 @@ import { DashboardComponent } from '../app/customComponents/dashboard/dashboard.
 import { AuthGuard } from './services/auth-guard.service';
 import { RealTimeDetectionComponent } from './customComponents/real-time-detection/real-time-detection.component';
 import { PostsComponent } from './customComponents/posts/posts.component';
-import { PostItemComponent } from './customComponents/posts/post-item/post-item.component';
 import { NewPostComponent } from './customComponents/posts/new-post/new-post.component';
 import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
+import { CommunityPostsComponent } from './customComponents/posts/community-posts/community-posts.component';
+import { MyPostsComponent } from './customComponents/posts/my-posts/my-posts.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -23,8 +24,8 @@ const routes: Routes = [
     path: 'posts',
     component: PostsComponent,
     children: [
-      { path: '', component: PostItemComponent },
-      { path: 'me', component: PostItemComponent },
+      { path: '', component: CommunityPostsComponent },
+      { path: 'me', component: MyPostsComponent },
     ],
   },
   {

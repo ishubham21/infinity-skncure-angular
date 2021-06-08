@@ -1,3 +1,6 @@
+.row {
+  --bs-gutter-x: 0 !important;
+}
 .heart {
   fill: white;
   width: 1.2rem;
@@ -7,4 +10,17 @@
   color: white;
   display: flex;
   align-items: center;
+}
+.card-container {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 31.33%;
+}
+@media screen and (max-width: 760px) {
+  .card-container {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
 }

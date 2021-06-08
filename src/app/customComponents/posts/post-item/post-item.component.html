@@ -1,14 +1,24 @@
-<div class="row mt-5 g-3">
-    <div class="col-md-4">
-        <img src="https://images.unsplash.com/photo-1484972759836-b93f9ef2b293?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" class="card-img-top" width="350" height="230" alt="...">
-        <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi, porro nisi suscipit, minus aliquam quibusdam voluptates sint sequi voluptatem aliquid. Ullam veniam itaque recusandae minus. Error eligendi voluptas dolorem?</p>
-            <button class="btn card-button" type="button">Support &nbsp;
-                <svg class="heart" viewBox="0 0 32 29.6">
-                    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-                      c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-                </svg> 
-            </button>
-        </div>
-    </div>
+<div class="col-sm-12 card-container">
+  <mat-card>
+      <mat-card-header style="margin-bottom: 1rem;">
+        <div mat-card-avatar style="background-image: url('{{post.userProfileImage}}');
+        background-size: cover;"></div>
+        <mat-card-title>{{post.userName}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="post.img" width="350" height="230" alt="User">
+      <mat-card-content style=" min-height: 140px;">
+        <p>
+          {{post.text}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+          <button mat-flat-button color="primary" (click)="support()">Support &nbsp;
+              <svg class="heart" viewBox="0 0 32 29.6">
+                  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+              </svg> 
+          </button>
+          {{post.supports}}
+      </mat-card-actions>
+    </mat-card>
 </div>
