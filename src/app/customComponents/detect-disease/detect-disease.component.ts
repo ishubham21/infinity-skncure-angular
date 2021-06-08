@@ -1,6 +1,7 @@
 import { ElementRef, EventEmitter, VERSION, ViewChild } from '@angular/core';
-import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ResultPopupComponent } from './result-popup/result-popup.component';
 
 declare const ml5: any
 
@@ -21,7 +22,7 @@ export class DetectDiseaseComponent implements OnInit {
   confidenceOnDisease: any
   labelOfDisease: any
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
 
     //creating an instance of predictEvt event emitter - continued in ngAfterViewInit()
     this.predictEvt = new EventEmitter<void>();
@@ -99,10 +100,15 @@ export class DetectDiseaseComponent implements OnInit {
           }
           
           //setting tha values to be transferred to the dialog 
-          this.confidenceOnDisease = results[0].confidence
+          this.confidenceOnDisease = (results[0].confidence * 100).toFixed(2)
           this.labelOfDisease = results[0].label
 
-          console.log(results[0].label);
+          //creating a reference for dialog and subscribing to the changes
+          let dialogRef = this.dialog.open(ResultPopupComponent, { data: {disease: this.labelOfDisease, confidence: this.confidenceOnDisease}})
+
+          dialogRef.afterClosed().subscribe(result => {
+            console.log(result)
+          })
           
         })
       }, (err: Error) => console.error(err)) //log errors if any

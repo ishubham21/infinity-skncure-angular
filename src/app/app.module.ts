@@ -37,6 +37,7 @@ import { NewPostComponent } from './customComponents/posts/new-post/new-post.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommunityPostsComponent } from './customComponents/posts/community-posts/community-posts.component';
 import { MyPostsComponent } from './customComponents/posts/my-posts/my-posts.component';
+import { ResultPopupComponent } from './customComponents/detect-disease/result-popup/result-popup.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { MyPostsComponent } from './customComponents/posts/my-posts/my-posts.com
     NewPostComponent,
     CommunityPostsComponent,
     MyPostsComponent,
+    ResultPopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +75,7 @@ import { MyPostsComponent } from './customComponents/posts/my-posts/my-posts.com
     MatSlideToggleModule,
     AngularFireStorageModule,
   ],
+  entryComponents: [ResultPopupComponent],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent],
 })
