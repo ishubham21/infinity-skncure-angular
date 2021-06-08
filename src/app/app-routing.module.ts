@@ -9,6 +9,7 @@ import { NewPostComponent } from './customComponents/posts/new-post/new-post.com
 import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
 import { CommunityPostsComponent } from './customComponents/posts/community-posts/community-posts.component';
 import { MyPostsComponent } from './customComponents/posts/my-posts/my-posts.component';
+import { DarkCirclesComponent } from './customComponents/dark-circles/dark-circles.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
   },
   { path: 'real-time', component: RealTimeDetectionComponent },
   { path: 'upload-image', component: DetectDiseaseComponent },
+  { path: 'dark-circles', component: DarkCirclesComponent },
   {
     path: 'posts',
     component: PostsComponent,

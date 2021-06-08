@@ -1,26 +1,26 @@
 import { ElementRef, EventEmitter, VERSION, ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ResultPopupComponent } from './result-popup/result-popup.component';
+import { DialogPopupComponent } from './dialog-popup/dialog-popup.component';
 
 declare const ml5: any
 
 @Component({
-  selector: 'app-detect-disease',
-  templateUrl: './detect-disease.component.html',
-  styleUrls: ['./detect-disease.component.css']
+  selector: 'app-dark-circles',
+  templateUrl: './dark-circles.component.html',
+  styleUrls: ['./dark-circles.component.css']
 })
-export class DetectDiseaseComponent implements OnInit {
+export class DarkCirclesComponent implements OnInit {
 
   //event emitter to predict results
   public predictEvt!: EventEmitter<void>;
-  
+
   //classifier varaible that loads the model
   classifier: any
 
   //confidence and label of the prediction
-  confidenceOnDisease: any
-  labelOfDisease: any
+  confidenceOnPrediction: any
+  labelOfPrediction: any
 
   constructor(public dialog: MatDialog) {
 
@@ -30,7 +30,7 @@ export class DetectDiseaseComponent implements OnInit {
 
   ngOnInit(): void {
     //loading model on init
-    this.classifier = ml5.imageClassifier('assets/model/skin-diseases/' + 'model.json')
+    this.classifier = ml5.imageClassifier('assets/model/dark-circles/' + 'model.json')
   }
 
   name = 'Angular ' + VERSION.major;
@@ -40,7 +40,7 @@ export class DetectDiseaseComponent implements OnInit {
   @ViewChild('fileInput') fileInput!: ElementRef;
 
   @ViewChild('previewImg') previewImg!: ElementRef;
-  
+
   //fileAttr is the name of the file to be displayed
   fileAttr = 'Choose File';
 
@@ -62,22 +62,22 @@ export class DetectDiseaseComponent implements OnInit {
       reader.onload = (e: any) => {
         let image = new Image();
         image.src = e.target.result;
-        
+
         //image reader onload
         image.onload = rs => {
           let imgBase64Path = e.target.result;
           this.dataimage = imgBase64Path;
         };
-      
+
       };
-      
+
       //reading as dataURL - to be called after creating a reader
       reader.readAsDataURL(imgFile.target.files[0]);
 
       // Reset if duplicate image uploaded again
       this.fileInput.nativeElement.value = "";
-    } 
-    
+    }
+
     //if image not found
     else {
       this.fileAttr = 'Choose File';
@@ -85,32 +85,33 @@ export class DetectDiseaseComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    
+
     //emitting the prdictEvt event
     this.predictEvt.emit();
 
     //subscribing to the changes produced - button click in this case
-    this.predictEvt.subscribe( async () => {
-      
+    this.predictEvt.subscribe(async () => {
+
       //ml5 function to classify the image - takes the image element and a callback function
-      await this.classifier.classify(this.previewImg.nativeElement, (error:any, results:any) => {
-          if (error) {
-            console.error(error)
-            return
-          }
-          
-          //setting tha values to be transferred to the dialog 
-          this.confidenceOnDisease = (results[0].confidence * 100).toFixed(2)
-          this.labelOfDisease = results[0].label
+      await this.classifier.classify(this.previewImg.nativeElement, (error: any, results: any) => {
+        if (error) {
+          console.error(error)
+          return
+        }
 
-          //creating a reference for dialog and subscribing to the changes
-          let dialogRef = this.dialog.open(ResultPopupComponent, { data: {disease: this.labelOfDisease, confidence: this.confidenceOnDisease}})
+        //setting tha values to be transferred to the dialog 
+        this.confidenceOnPrediction = (results[0].confidence * 100).toFixed(2)
+        this.labelOfPrediction = results[0].label
 
-          dialogRef.afterClosed().subscribe(result => {
-            console.log(result)
-          })
-          
+        //creating a reference for dialog and subscribing to the changes
+        let dialogRef = this.dialog.open(DialogPopupComponent, { data: { disease: this.labelOfPrediction, confidence: this.confidenceOnPrediction } })
+
+        dialogRef.afterClosed().subscribe(result => {
+          console.log(result)
         })
-      }, (err: Error) => console.error(err)) //log errors if any
+
+      })
+    }, (err: Error) => console.error(err)) //log errors if any
   }
+
 }

@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-body d-flex justify-content-center">
+        <mat-form-field>
+            <div>
+                <mat-toolbar>
+                    <!-- Display files names -->
+                    <input matInput [(ngModel)]="fileAttr" readonly />
+
+                    <!-- Browse Button -->
+                    <button mat-flat-button color="primary">
+                        Browse File
+                    </button>
+                </mat-toolbar>
+
+                <!-- Fetch selected filed on change -->
+                <input type="file" #fileInput id="uploadFile" (change)="uploadFileEvt($event)" name="uploadFile"
+                    accept="image/*" />
+            </div>
+        </mat-form-field>
+    </div>
+
+    <div class="card-footer">
+        <img src="{{ dataimage }}" #previewImg>
+    </div>
+
+    <div *ngIf="dataimage" class="predict-btn-div">
+        <!--Emitting the event on click-->
+        <button mat-flat-button color="primary" (click)="predictEvt.emit()">
+            Predict
+        </button>
+    </div>
+</div>

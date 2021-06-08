@@ -38,6 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommunityPostsComponent } from './customComponents/posts/community-posts/community-posts.component';
 import { MyPostsComponent } from './customComponents/posts/my-posts/my-posts.component';
 import { ResultPopupComponent } from './customComponents/detect-disease/result-popup/result-popup.component';
+import { DarkCirclesComponent } from './customComponents/dark-circles/dark-circles.component';
+import { DialogPopupComponent } from './customComponents/dark-circles/dialog-popup/dialog-popup.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { ResultPopupComponent } from './customComponents/detect-disease/result-p
     CommunityPostsComponent,
     MyPostsComponent,
     ResultPopupComponent,
+    DarkCirclesComponent,
+    DialogPopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,7 +79,7 @@ import { ResultPopupComponent } from './customComponents/detect-disease/result-p
     MatSlideToggleModule,
     AngularFireStorageModule,
   ],
-  entryComponents: [ResultPopupComponent],
+  entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent],
 })
