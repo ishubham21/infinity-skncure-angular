@@ -54,7 +54,7 @@ export class RealTimeDetectionComponent implements OnInit {
       //preloading the ML model before the canvas loads
       p5.preload = () => {
         //model
-        this.classifier = ml5.imageClassifier('assets/model/' + 'model.json')
+        this.classifier = ml5.imageClassifier('assets/model/skin-diseases/' + 'model.json')
       }
 
       p5.setup = () => {

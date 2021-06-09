@@ -14,6 +14,7 @@ export class PostsService {
   postsCollection: AngularFirestoreCollection<Post>;
   posts: Observable<Post[]>;
   postDoc: any = '';
+  userPosts!: Observable<Post[]>
 
   constructor(private afs: AngularFirestore, private authService: AuthService) {
     this.postsCollection = afs.collection('posts');
@@ -42,7 +43,7 @@ export class PostsService {
     //   this.authService.userData.uid
     // );
     // return this.authService.userData.uid;
-    this.posts = this.afs
+    this.userPosts = this.afs
       .collection('posts', (ref) =>
         ref.where('owner', '==', this.authService.userData.uid)
       )
@@ -56,7 +57,7 @@ export class PostsService {
           })
         )
       );
-    return this.posts;
+    return this.userPosts;
   }
 
   addPost(post: Post) {
