@@ -3,12 +3,13 @@ svg {
   z-index: -2;
 }
 .topbar{
-  background-image: url(illus2.png);
-  background-size: 100% 13rem;
+  background-image: url(topillus.png);
+  background-size: 100% 14rem;
   position: relative;
   height: 10rem;
   background-repeat: no-repeat;
   background-position: top;
+  padding-bottom: 10px;
 }
 .topbar-text{
   position: absolute;
@@ -43,10 +44,11 @@ button{
 }
 .navbar-icon{
   position: absolute;
-  right: 25px;
+  left: 65px;
   font-size: 35px;
-  top: 40px;
+  top: 30px;
   color: #fff;
+  cursor: pointer;
 }
 .tool {
   background-color: #fff;
@@ -71,17 +73,24 @@ button{
 }
 
 @media (max-width: 762px) {
+  .topbar{
+    background-image: url(topillus-mob.png);
+  }
+  .navbar-icon{
+    left: 30px;
+  }
   .toolbar-top {
     font-size: 25px;
     margin-top: 30px;
   }
   .topbar-text {
-    top: 30%;
+    /* top: 30%;
     width: 20rem;
-    left: 10px;
+    left: 10px; */
+    display: none;
   }
   .tool {
-    flex: 0 0 40% !important;
+    flex: 0 0 30% !important;
     margin: 10px;
     text-align: center;
     padding: 15px;
