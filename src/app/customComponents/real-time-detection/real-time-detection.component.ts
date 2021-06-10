@@ -96,10 +96,11 @@ export class RealTimeDetectionComponent implements OnInit {
         canvas = new p5(sketch, this.classificationCanvas.nativeElement);
       }
     }
-    
+
   }
 
-  ngOndestroy() {
+  ngOnDestroy() {
+    debugger
     this.classificationCanvas.nativeElement.remove();
   }
 
