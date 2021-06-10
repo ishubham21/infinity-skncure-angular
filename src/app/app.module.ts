@@ -14,6 +14,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
+import { GoogleMapsModule } from '@angular/google-maps';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -82,6 +84,7 @@ import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby
     MatGridListModule,
     MatSlideToggleModule,
     AngularFireStorageModule,
+    GoogleMapsModule,
   ],
   entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],
