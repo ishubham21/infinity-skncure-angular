@@ -1,0 +1,31 @@
+.top-main .content{
+    position: relative;
+    height: 15vh;
+    width: 100%;
+}
+.content img{
+    height: auto;
+    width: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+.user-name{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 90px;
+    font-size: 20px;
+}
+
+@media (max-width: 350px) {
+    .content img{
+        width: 3rem;
+    }
+    .user-name{
+        font-size: 15px;
+        left: 70px;
+    }
+}
