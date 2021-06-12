@@ -41,6 +41,7 @@ import { ResultPopupComponent } from './customComponents/detect-disease/result-p
 import { DarkCirclesComponent } from './customComponents/dark-circles/dark-circles.component';
 import { DialogPopupComponent } from './customComponents/dark-circles/dialog-popup/dialog-popup.component';
 import { TipsComponent } from './customComponents/tips/tips.component';
+import { TrackerComponent } from './customComponents/tracker/tracker.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { TipsComponent } from './customComponents/tips/tips.component';
     DarkCirclesComponent,
     DialogPopupComponent,
     TipsComponent,
+    TrackerComponent,
   ],
   imports: [
     BrowserModule,
