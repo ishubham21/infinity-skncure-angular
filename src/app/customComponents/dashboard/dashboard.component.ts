@@ -23,5 +23,3 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {}
 }
-export class CardFancyExample {}
-export class IconOverviewExample {}

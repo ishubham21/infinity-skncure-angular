@@ -5,50 +5,42 @@
 <div class="row top-row" *ngIf="authService.userData as user">
 
     <section class="f-body">
-        <div class="main-section">
-            <div class="content">
-                <div class="topbar">
-                    <h3 class="topbar-text">Beauty is being comfortable and confident in your own skin.</h3>
-                    <button class="btn btn-primary" (click)="openProfileNav()"><mat-icon class="navbar-icon" aria-hidden="false" aria-label="Example home icon">menu</mat-icon></button>
-                </div>
-                <div class="toolbar">
-                    <h4 class="toolbar-top text-center">Infinity Tools</h4>
-                    <div class="tool-box d-flex">
-                        <mat-card class="example-card tool" [routerLink]="['/real-time']" routerLinkActive="router-link-active">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Real Time</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool" [routerLink]="['/posts']" routerLinkActive="router-link-active">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Infinity Community</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool" [routerLink]="['/upload-image']" routerLinkActive="router-link-active">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Upload Image</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool" [routerLink]="['/dark-circles']" routerLinkActive="router-link-active">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Dark Cicle Detection</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Shiba Inu</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Shiba Inu</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
+        <div class="row">
+            <div class="main-section">
+                <div class="content">
+                    <div class="topbar">
+                        <h3 class="topbar-text">Beauty is being comfortable and confident in your own skin.</h3>
+                    </div>
+                    <div class="toolbar">
+                        <h4 class="toolbar-top text-center">Infinity Tools</h4>
+                        <div class="tool-box d-flex">
+                            <div class="tool" [routerLink]="['/real-time']" routerLinkActive="router-link-active" >
+                                <p>Real Time</p>
+                            </div>
+                            <div class="tool" [routerLink]="['/posts']" routerLinkActive="router-link-active">
+                                <p>Infinity Community</p>
+                            </div>
+                            <div class="tool" [routerLink]="['/upload-image']" routerLinkActive="router-link-active" >
+                                <p>Upload Image</p>
+                            </div>
+                            <div class="tool" [routerLink]="['/dark-circles']" routerLinkActive="router-link-active" >
+                                <p>Dark Cicle Detection</p>
+                            </div>
+                            <div class="tool">
+                                <p>Tool Name</p>
+                            </div>
+                            <div class="tool">
+                                <p>Tool Name</p>
+                            </div>
+    
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+        <button class="btn btn-primary" (click)="openProfileNav()">Toggle Profile nav</button>
     </section>
 
 </div>
+
+

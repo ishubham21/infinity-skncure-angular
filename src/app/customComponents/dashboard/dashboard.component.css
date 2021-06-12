@@ -2,28 +2,6 @@
 svg {
   z-index: -2;
 }
-.topbar{
-  background-image: url(illus2.png);
-  background-size: 100% 13rem;
-  position: relative;
-  height: 10rem;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.topbar-text{
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 27rem;
-  color: #fff;
-  font-weight: 500;
-}
-.toolbar-top {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 1rem;
-}
 .tool-box {
   flex-wrap: wrap;
   justify-content: center;
@@ -36,17 +14,6 @@ svg {
   font-weight: 600;
   margin-top: 15px;
   font-size: 18px;
-}
-button{
-  background: transparent;
-  border: none;
-}
-.navbar-icon{
-  position: absolute;
-  right: 25px;
-  font-size: 35px;
-  top: 40px;
-  color: #fff;
 }
 .tool {
   background-color: #fff;
@@ -76,9 +43,7 @@ button{
     margin-top: 30px;
   }
   .topbar-text {
-    top: 30%;
-    width: 20rem;
-    left: 10px;
+    top: 60%;
   }
   .tool {
     flex: 0 0 40% !important;
@@ -95,24 +60,4 @@ button{
   .tool {
     flex: 0 0 30%;
   }
-}
-
-.example-card {
-  width: 20rem;
-  height: 5rem;
-  transition: 0.3s;
-  position: relative;
-}
-
-.card-header{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.cards-section{
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
 }
