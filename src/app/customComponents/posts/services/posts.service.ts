@@ -2,19 +2,20 @@ import { Injectable } from '@angular/core';
 import {
   AngularFirestore,
   AngularFirestoreCollection,
+  AngularFirestoreDocument,
 } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { AuthService } from 'src/app/services/auth.service';
 
 import { Post } from '../post.model';
+import { Support } from '../supports.model';
 
 @Injectable({ providedIn: 'root' })
 export class PostsService {
   postsCollection: AngularFirestoreCollection<Post>;
   posts: Observable<Post[]>;
-  postDoc: any = '';
-  userPosts!: Observable<Post[]>
+  userPosts!: Observable<Post[]>;
 
   constructor(private afs: AngularFirestore, private authService: AuthService) {
     this.postsCollection = afs.collection('posts');
@@ -37,12 +38,6 @@ export class PostsService {
   }
 
   getMyPosts() {
-    // return this.postsCollection.ref.where(
-    //   'owner',
-    //   '==',
-    //   this.authService.userData.uid
-    // );
-    // return this.authService.userData.uid;
     this.userPosts = this.afs
       .collection('posts', (ref) =>
         ref.where('owner', '==', this.authService.userData.uid)
@@ -64,11 +59,37 @@ export class PostsService {
     post.userName = this.authService.userData.displayName;
     post.userProfileImage = this.authService.userData.photoURL;
     post.owner = this.authService.userData.uid;
-    this.postsCollection.add(post);
+    this.postsCollection.add(post).then((docref) => {
+      const postDoc = this.afs.doc(`posts/${docref.id}`);
+      postDoc.update({ id: docref.id });
+    });
   }
 
-  support(post: Post) {
-    this.postDoc = this.afs.doc(`posts/${post.id}`);
-    this.postDoc.update(post);
+  checkSupport(post: Post) {
+    const userAlreadyLiked = this.afs
+      .collection<Post>('posts', (ref) =>
+        ref.where('id', '==', post.id).limit(1)
+      )
+      .snapshotChanges()
+      .pipe(
+        map((actions) =>
+          actions.map((a) => {
+            const data = a.payload.doc.data() as Post;
+            data.id = a.payload.doc.id;
+            return data;
+          })
+        )
+      );
+    return userAlreadyLiked;
+  }
+
+  support(post: Post, userId: any) {
+    const postDoc = this.afs.doc(`posts/${post.id}`);
+    postDoc.update({ supportCount: [...post.supportCount, userId] });
+  }
+
+  notSupport(post: Post) {
+    const postDoc = this.afs.doc(`posts/${post.id}`);
+    postDoc.update(post);
   }
 }

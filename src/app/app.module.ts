@@ -28,6 +28,7 @@ import { DashboardComponent } from './customComponents/dashboard/dashboard.compo
 
 import { AuthService } from '../app/services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
+import { GoogleMapsModule } from '@angular/google-maps'
 import { ProfileComponent } from './customComponents/profile/profile.component';
 import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
 import { RealTimeDetectionComponent } from './customComponents/real-time-detection/real-time-detection.component';
@@ -41,6 +42,7 @@ import { ResultPopupComponent } from './customComponents/detect-disease/result-p
 import { DarkCirclesComponent } from './customComponents/dark-circles/dark-circles.component';
 import { DialogPopupComponent } from './customComponents/dark-circles/dialog-popup/dialog-popup.component';
 import { TipsComponent } from './customComponents/tips/tips.component';
+import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby-doctors.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,7 @@ import { TipsComponent } from './customComponents/tips/tips.component';
     DarkCirclesComponent,
     DialogPopupComponent,
     TipsComponent,
+    NearbyDoctorsComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,6 +83,7 @@ import { TipsComponent } from './customComponents/tips/tips.component';
     MatGridListModule,
     MatSlideToggleModule,
     AngularFireStorageModule,
+    GoogleMapsModule
   ],
   entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],

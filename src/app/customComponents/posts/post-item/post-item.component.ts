@@ -1,4 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { map, take } from 'rxjs/operators';
+
+import { AuthService } from 'src/app/services/auth.service';
 
 import { Post } from '../post.model';
 import { PostsService } from '../services/posts.service';
@@ -14,20 +17,39 @@ export class PostItemComponent implements OnInit {
     img: '',
     text: '',
     owner: '',
-    supports: 0,
+    supportCount: [],
     onlyMe: false,
     userProfileImage: '',
     userName: 'User',
+    createdAt: '',
   };
   @Input() index: number = 0;
   @Input() myPost: boolean = false;
 
-  constructor(private postService: PostsService) {}
+  constructor(
+    private postService: PostsService,
+    private authService: AuthService
+  ) {}
 
   ngOnInit(): void {}
 
   support() {
-    this.post.supports = this.post.supports + 1;
-    this.postService.support(this.post);
+    const userId = this.authService.userData.uid;
+    let post = this.postService
+      .checkSupport(this.post)
+      .pipe(take(1))
+      .subscribe((post) => {
+        const alreadyLiked = post[0].supportCount.find(
+          (support: any) => support == userId
+        );
+        if (alreadyLiked) {
+          post[0].supportCount.splice(post[0].supportCount.indexOf(userId), 1);
+          this.postService.notSupport(post[0]);
+        } else {
+          this.postService.support(post[0], userId);
+        }
+      });
+
+    post.unsubscribe;
   }
 }

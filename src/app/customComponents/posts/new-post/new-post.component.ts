@@ -16,11 +16,12 @@ export class NewPostComponent implements OnInit {
     id: '',
     img: 'https://images.unsplash.com/photo-1484972759836-b93f9ef2b293?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     text: '',
-    supports: 0,
+    supportCount: [],
     owner: '',
     onlyMe: false,
     userProfileImage: '',
     userName: 'User',
+    createdAt: '',
   };
   submitted = false;
   path: any = {};
@@ -50,6 +51,7 @@ export class NewPostComponent implements OnInit {
     ref.getDownloadURL().subscribe((url) => {
       console.log(url);
       this.post.img = url;
+      this.post.createdAt = new Date();
       this.postsService.addPost(this.post);
     });
 
