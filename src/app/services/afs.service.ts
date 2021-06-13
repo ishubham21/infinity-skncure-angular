@@ -24,7 +24,7 @@ export class AfsService {
   }
 
   addData(userData: any){
-    this.userRef.set(userData, { merge: true })
+    // this.userRef.set(userData, { merge: true })
   }
 
   readData(){

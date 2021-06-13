@@ -46,7 +46,7 @@ export class AuthService {
         this.router.navigate(['/dashboard']);
 
         //creating a new user document whenever a new login happens
-        return this.setUserData(value.user)
+        // return this.setUserData(value.user)
       })
       .catch((error: any) => {
         alert('Something went wrong, Refresh!');
@@ -61,17 +61,17 @@ export class AuthService {
   }
 
   //function to set user data in google firestore database when a new user logs in
-  setUserData(user: { uid: any; email: any; displayName: any; photoURL: any, customData: any}) {
+  // setUserData(user: { uid: any; email: any; displayName: any; photoURL: any, customData: any}) {
 
-  	//seeting user reference for firestore database
-  	const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${user.uid}`);
+  // 	//seeting user reference for firestore database
+  // 	const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${user.uid}`);
 
-  	const userData: User = {
-  		uid: user.uid,
-  		email: user.email,
-      customData: { }
-  	}
+  // 	const userData: User = {
+  // 		uid: user.uid,
+  // 		email: user.email,
+  //     customData: { }
+  // 	}
 
-  	return userRef.set(userData, { merge: true })
-  }
+  // 	return userRef.set(userData, { merge: true })
+  // }
 }
