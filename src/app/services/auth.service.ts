@@ -1,10 +1,5 @@
 import { Injectable, NgZone } from '@angular/core';
-import {
-  Router,
-  CanActivate,
-  ActivatedRouteSnapshot,
-  RouterStateSnapshot,
-} from '@angular/router';
+import { Router } from '@angular/router';
 import {
   AngularFirestore,
   AngularFirestoreDocument,
@@ -12,6 +7,7 @@ import {
 import firebase from 'firebase/app';
 import { AngularFireAuth } from '@angular/fire/auth';
 import 'firebase/auth';
+import { User } from './user';
 
 @Injectable()
 export class AuthService {
@@ -28,6 +24,7 @@ export class AuthService {
         //if user exists, fetch his credentials and pass it
         this.userData = user;
         this.router.navigate(['/dashboard']);
+        
       } else {
         this.router.navigate(['/']);
       }
@@ -40,16 +37,19 @@ export class AuthService {
   }
 
   //login with google function - providing google auth provider to oAuthLogin function
-  async googleLogin() {
+  googleLogin() {
     const provider = new firebase.auth.GoogleAuthProvider();
     this.afAuth
       .signInWithPopup(provider)
       .then((value: any) => {
-        console.log(value.user);
+        // console.log(value.user);
         this.router.navigate(['/dashboard']);
+
+        //creating a new user document whenever a new login happens
+        return this.setUserData(value.user)
       })
       .catch((error: any) => {
-        console.log('Something went wrong: ', error);
+        alert('Something went wrong, Refresh!');
       });
   }
 
@@ -60,20 +60,18 @@ export class AuthService {
     });
   }
 
-  //NEED THIS ONLY AT THE TIME OF USING FIRESTORE DATABASE
   //function to set user data in google firestore database when a new user logs in
-  // setUserData(user: { uid: any; email: any; displayName: any; photoURL: any}) {
+  setUserData(user: { uid: any; email: any; displayName: any; photoURL: any, customData: any}) {
 
-  // 	//seeting user reference for firestore database
-  // 	const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${user.uid}`);
+  	//seeting user reference for firestore database
+  	const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${user.uid}`);
 
-  // 	const userData: User = {
-  // 		uid: user.uid,
-  // 		email: user.email,
-  // 		displayName: user.displayName,
-  // 		photoURL: user.photoURL
-  // 	}
+  	const userData: User = {
+  		uid: user.uid,
+  		email: user.email,
+      customData: {}
+  	}
 
-  // 	return userRef.set(userData, { merge: true })
-  // }
+  	return userRef.set(userData, { merge: true })
+  }
 }
