@@ -4,3 +4,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 canvas{
     border-radius: 10px!important;
 }
+::-webkit-scrollbar {
+  width: 0px;
+}

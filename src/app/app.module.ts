@@ -13,6 +13,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatListModule } from "@angular/material/list";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -83,7 +86,10 @@ import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby
     MatGridListModule,
     MatSlideToggleModule,
     AngularFireStorageModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    MatDividerModule,
+    MatSidenavModule,
+    MatListModule
   ],
   entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],
