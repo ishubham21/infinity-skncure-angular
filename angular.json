@@ -38,7 +38,8 @@
               "./src/assets/ml-js/p5.js",
               "./src/assets/ml-js/p5.dom.min.js",
               "./src/assets/ml-js/ml5.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/chart.js/dist/Chart.min.js"
             ]
           },
           "configurations": {
