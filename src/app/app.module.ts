@@ -49,6 +49,7 @@ import { DialogPopupComponent } from './customComponents/dark-circles/dialog-pop
 import { TipsComponent } from './customComponents/tips/tips.component';
 import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby-doctors.component';
 import { DiseaseTrackerComponent } from './customComponents/disease-tracker/disease-tracker.component';
+import { AppointmentsComponent } from './customComponents/appointments/appointments.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { DiseaseTrackerComponent } from './customComponents/disease-tracker/dise
     TipsComponent,
     NearbyDoctorsComponent,
     DiseaseTrackerComponent,
+    AppointmentsComponent,
   ],
   imports: [
     BrowserModule,
