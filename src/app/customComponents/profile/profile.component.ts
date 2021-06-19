@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'app-profile',
@@ -13,9 +13,8 @@ export class ProfileComponent implements OnInit {
   constructor(public authService: AuthService) {}
 
   closeProfileNav() {
-    console.log(!this.profileNavStatus)
+    console.log(!this.profileNavStatus);
     this.profileClosed.emit(!this.profileNavStatus);
-    
   }
 
   ngOnInit(): void {}

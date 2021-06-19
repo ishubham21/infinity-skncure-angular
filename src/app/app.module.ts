@@ -26,9 +26,9 @@ import { environment } from '../environments/environment';
 import { LoginComponent } from './customComponents/login/login.component';
 import { DashboardComponent } from './customComponents/dashboard/dashboard.component';
 
-import { AuthService } from '../app/services/auth.service';
-import { AuthGuard } from './services/auth-guard.service';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { AuthService } from '../app/services/auth/auth.service';
+import { AuthGuard } from './services/auth/auth-guard.service';
+import { GoogleMapsModule } from '@angular/google-maps';
 import { ProfileComponent } from './customComponents/profile/profile.component';
 import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
 import { RealTimeDetectionComponent } from './customComponents/real-time-detection/real-time-detection.component';
@@ -83,7 +83,7 @@ import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby
     MatGridListModule,
     MatSlideToggleModule,
     AngularFireStorageModule,
-    GoogleMapsModule
+    GoogleMapsModule,
   ],
   entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from '../app/customComponents/login/login.component';
 import { DashboardComponent } from '../app/customComponents/dashboard/dashboard.component';
-import { AuthGuard } from './services/auth-guard.service';
+import { AuthGuard } from './services/auth/auth-guard.service';
 import { RealTimeDetectionComponent } from './customComponents/real-time-detection/real-time-detection.component';
 import { PostsComponent } from './customComponents/posts/posts.component';
 import { NewPostComponent } from './customComponents/posts/new-post/new-post.component';

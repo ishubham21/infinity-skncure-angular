@@ -2,14 +2,12 @@ import { Injectable } from '@angular/core';
 import {
   AngularFirestore,
   AngularFirestoreCollection,
-  AngularFirestoreDocument,
 } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 import { Post } from '../post.model';
-import { Support } from '../supports.model';
 
 @Injectable({ providedIn: 'root' })
 export class PostsService {

@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { Post } from '../post.model';
 import { PostsService } from '../services/posts.service';
 import { AngularFireStorage } from '@angular/fire/storage';
-import { finalize } from 'rxjs/operators';
 
 @Component({
   selector: 'app-new-post',

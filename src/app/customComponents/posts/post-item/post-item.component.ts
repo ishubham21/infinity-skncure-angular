@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { map, take } from 'rxjs/operators';
 
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 import { Post } from '../post.model';
 import { PostsService } from '../services/posts.service';
