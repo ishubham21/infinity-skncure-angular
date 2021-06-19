@@ -29,6 +29,13 @@ button{
   color: #fff;
   cursor: pointer;
 }
+
+.topbar button{
+  margin-left: 30px!important;
+  margin-top: 10px;
+  color: #fff;
+}
+
 .tool {
   background-color: #fff;
   border: 1px solid #ddd;

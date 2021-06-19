@@ -25,8 +25,8 @@
                     <div class="main-section">
                         <div class="content">
                             <div class="topbar">
-                                <button mat-icon-button (click)="snav.toggle()">
-                                    <mat-icon>menu</mat-icon>
+                                <button mat-icon-button (click)="snav.toggle()" class="mat-btn-menu">
+                                    <mat-icon>menu</mat-icon> Menu
                                 </button>
                                 <h3 class="topbar-text">Beauty is being comfortable and confident in your own skin.</h3>
                             </div>
@@ -72,9 +72,9 @@
                                             <mat-card-title class="card-header">See a Doctor</mat-card-title>
                                         </mat-card-header>
                                     </mat-card>
-                                    <mat-card class="example-card tool">
+                                    <mat-card class="example-card tool" [routerLink]="['/tips']" routerLinkActive="router-link-active" >
                                         <mat-card-header>
-                                            <mat-card-title class="card-header">Shiba Inu</mat-card-title>
+                                            <mat-card-title class="card-header">General Tips</mat-card-title>
                                         </mat-card-header>
                                     </mat-card>
                                 </div>
