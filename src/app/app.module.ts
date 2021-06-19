@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -13,9 +14,12 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { ChartsModule } from 'ng2-charts';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -23,12 +27,13 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 
-import { LoginComponent } from './customComponents/login/login.component';
-import { DashboardComponent } from './customComponents/dashboard/dashboard.component';
-
 import { AuthService } from '../app/services/auth/auth.service';
 import { AuthGuard } from './services/auth/auth-guard.service';
-import { GoogleMapsModule } from '@angular/google-maps';
+
+import { LoginComponent } from './customComponents/login/login.component';
+import { DashboardComponent } from './customComponents/dashboard/dashboard.component';
+import { AppComponent } from './app.component';
+
 import { ProfileComponent } from './customComponents/profile/profile.component';
 import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
 import { RealTimeDetectionComponent } from './customComponents/real-time-detection/real-time-detection.component';
@@ -43,6 +48,8 @@ import { DarkCirclesComponent } from './customComponents/dark-circles/dark-circl
 import { DialogPopupComponent } from './customComponents/dark-circles/dialog-popup/dialog-popup.component';
 import { TipsComponent } from './customComponents/tips/tips.component';
 import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby-doctors.component';
+import { DiseaseTrackerComponent } from './customComponents/disease-tracker/disease-tracker.component';
+import { AppointmentsComponent } from './customComponents/appointments/appointments.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +69,8 @@ import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby
     DialogPopupComponent,
     TipsComponent,
     NearbyDoctorsComponent,
+    DiseaseTrackerComponent,
+    AppointmentsComponent,
   ],
   imports: [
     BrowserModule,
@@ -84,6 +93,10 @@ import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby
     MatSlideToggleModule,
     AngularFireStorageModule,
     GoogleMapsModule,
+    MatDividerModule,
+    MatSidenavModule,
+    MatListModule,
+    ChartsModule,
   ],
   entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],

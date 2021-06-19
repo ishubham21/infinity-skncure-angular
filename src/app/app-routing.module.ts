@@ -12,6 +12,8 @@ import { MyPostsComponent } from './customComponents/posts/my-posts/my-posts.com
 import { DarkCirclesComponent } from './customComponents/dark-circles/dark-circles.component';
 import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby-doctors.component';
 import { TipsComponent } from './customComponents/tips/tips.component';
+import { DiseaseTrackerComponent } from './customComponents/disease-tracker/disease-tracker.component';
+import { AppointmentsComponent } from './customComponents/appointments/appointments.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -25,6 +27,8 @@ const routes: Routes = [
   { path: 'upload-image', component: DetectDiseaseComponent },
   { path: 'dark-circles', component: DarkCirclesComponent },
   { path: 'nearby-doctors', component: NearbyDoctorsComponent },
+  { path: 'disease-tracker', component: DiseaseTrackerComponent },
+  { path: 'appointments', component: AppointmentsComponent },
   { path: 'tips', component: TipsComponent },
   {
     path: 'posts',

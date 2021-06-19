@@ -4,51 +4,87 @@
 <!--If user exists, show his/her details-->
 <div class="row top-row" *ngIf="authService.userData as user">
 
-    <section class="f-body">
-        <div class="main-section">
-            <div class="content">
-                <div class="topbar">
-                    <h3 class="topbar-text">Beauty is being comfortable and confident in your own skin.</h3>
-                    <button class="btn btn-primary" (click)="openProfileNav()"><mat-icon class="navbar-icon" aria-hidden="false" aria-label="Example home icon">menu</mat-icon></button>
+    <div class="mat-container" [class.is-mobile]="mobileQuery.matches">
+        <!-- <mat-toolbar class="mat-toolbar topbar" *ngIf="authService.userData">
+            
+        </mat-toolbar> -->
+    
+        <mat-sidenav-container class="sidenav-container">
+            <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches">
+                <div class="sidenav-content">
+                    <img src="{{user.photoURL}}" alt="Profile Picture" class="profilePic">
+                    <p class="greetTxt">Hello</p>
+                    <p class="usersNameTxt">{{user.displayName}}</p>
+                    <button (click)="authService.logout()" class="logout-sidenav">Logout</button>
                 </div>
-                <div class="toolbar">
-                    <h4 class="toolbar-top text-center">Infinity Tools</h4>
-                    <div class="tool-box d-flex">
-                        <mat-card class="example-card tool" [routerLink]="['/real-time']" routerLinkActive="router-link-active">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Real Time</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool" [routerLink]="['/posts']" routerLinkActive="router-link-active">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Infinity Community</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool" [routerLink]="['/upload-image']" routerLinkActive="router-link-active">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Upload Image</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool" [routerLink]="['/dark-circles']" routerLinkActive="router-link-active">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Dark Cicle Detection</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool" [routerLink]="['/nearby-doctors']" routerLinkActive="router-link-active" >
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Nearby Doctors</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
-                        <mat-card class="example-card tool">
-                            <mat-card-header>
-                            <mat-card-title class="card-header">Shiba Inu</mat-card-title>
-                            </mat-card-header>
-                        </mat-card>
+            </mat-sidenav>
+
+    
+            <mat-sidenav-content>
+                <section class="f-body">
+                    <div class="main-section">
+                        <div class="content">
+                            <div class="topbar">
+                                <button mat-icon-button (click)="snav.toggle()" class="mat-btn-menu">
+                                    <mat-icon>menu</mat-icon> Menu
+                                </button>
+                                <h3 class="topbar-text">Beauty is being comfortable and confident in your own skin.</h3>
+                            </div>
+                            <div class="toolbar">
+                                <h4 class="toolbar-top text-center">Infinity Tools</h4>
+                                <div class="tool-box d-flex">
+                                    <mat-card class="example-card tool" [routerLink]="['/real-time']"
+                                        routerLinkActive="router-link-active">
+                                        <mat-card-header>
+                                            <mat-card-title class="card-header">Real Time</mat-card-title>
+                                        </mat-card-header>
+                                    </mat-card>
+                                    <mat-card class="example-card tool" [routerLink]="['/posts']" routerLinkActive="router-link-active">
+                                        <mat-card-header>
+                                            <mat-card-title class="card-header">Infinity Community</mat-card-title>
+                                        </mat-card-header>
+                                    </mat-card>
+                                    <mat-card class="example-card tool" [routerLink]="['/upload-image']"
+                                        routerLinkActive="router-link-active">
+                                        <mat-card-header>
+                                            <mat-card-title class="card-header">Upload Image</mat-card-title>
+                                        </mat-card-header>
+                                    </mat-card>
+                                    <mat-card class="example-card tool" [routerLink]="['/dark-circles']"
+                                        routerLinkActive="router-link-active">
+                                        <mat-card-header>
+                                            <mat-card-title class="card-header">Dark Cicle Detection</mat-card-title>
+                                        </mat-card-header>
+                                    </mat-card>
+                                    <mat-card class="example-card tool" [routerLink]="['/nearby-doctors']"
+                                        routerLinkActive="router-link-active">
+                                        <mat-card-header>
+                                            <mat-card-title class="card-header">Nearby Doctors</mat-card-title>
+                                        </mat-card-header>
+                                    </mat-card>
+                                    <mat-card class="example-card tool" [routerLink]="['/disease-tracker']" routerLinkActive="router-link-active" >
+                                        <mat-card-header>
+                                            <mat-card-title class="card-header">Disease Tracker</mat-card-title>
+                                        </mat-card-header>
+                                    </mat-card>
+                                    <mat-card class="example-card tool" [routerLink]="['/appointments']" routerLinkActive="router-link-active" >
+                                        <mat-card-header>
+                                            <mat-card-title class="card-header">See a Doctor</mat-card-title>
+                                        </mat-card-header>
+                                    </mat-card>
+                                    <mat-card class="example-card tool" [routerLink]="['/tips']" routerLinkActive="router-link-active" >
+                                        <mat-card-header>
+                                            <mat-card-title class="card-header">General Tips</mat-card-title>
+                                        </mat-card-header>
+                                    </mat-card>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+                
+                </section>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </div>
 
 </div>
