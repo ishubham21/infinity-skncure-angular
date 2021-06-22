@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Post } from '../post.model';
 import { PostsService } from '../services/posts.service';
 import { AngularFireStorage } from '@angular/fire/storage';
+import { finalize } from 'rxjs/operators';
 
 @Component({
   selector: 'app-new-post',
@@ -24,11 +25,12 @@ export class NewPostComponent implements OnInit {
   };
   submitted = false;
   path: any = {};
+  downloadURL: any;
 
   constructor(
     private postsService: PostsService,
     private router: Router,
-    private af: AngularFireStorage
+    private storage: AngularFireStorage
   ) {}
 
   ngOnInit(): void {}
@@ -40,19 +42,29 @@ export class NewPostComponent implements OnInit {
   onSubmit() {
     this.post.text = this.newPostForm.value.text;
     this.post.onlyMe = this.newPostForm.value.onlyMe;
-    const ref = this.af.ref('posts-image/' + this.path.name);
-    ref.put(this.path);
 
     if (this.newPostForm.value.onlyMe === '') {
       this.post.onlyMe = false;
     }
 
-    ref.getDownloadURL().subscribe((url) => {
-      console.log(url);
-      this.post.img = url;
-      this.post.createdAt = new Date();
-      this.postsService.addPost(this.post);
-    });
+    const filePath = 'posts-image/' + this.path.name;
+    const fileRef = this.storage.ref(filePath);
+    const task = this.storage.upload(filePath, this.path);
+
+    // get notified when the download URL is available
+    task
+      .snapshotChanges()
+      .pipe(
+        finalize(() => {
+          fileRef.getDownloadURL().subscribe((url) => {
+            console.log(url);
+            this.post.img = url;
+            this.post.createdAt = new Date();
+            this.postsService.addPost(this.post);
+          });
+        })
+      )
+      .subscribe();
 
     this.submitted = true;
 

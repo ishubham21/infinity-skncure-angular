@@ -17,10 +17,18 @@
   margin-bottom: 1rem;
   width: 31.33%;
 }
+.card-content {
+  height: 140px;
+  overflow: scroll;
+  margin: 0;
+}
 @media screen and (max-width: 760px) {
   .card-container {
     margin-right: 0rem;
     margin-bottom: 1rem;
     width: 100%;
+  }
+  .card-content {
+    height: 150px;
   }
 }

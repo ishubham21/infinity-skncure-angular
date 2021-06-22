@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AuthService } from '../auth/auth.service';
-import { Tracker } from './tracker.model';
+import { map, take } from 'rxjs/operators';
+// import { Tracker } from './tracker.model';
 
 @Injectable({ providedIn: 'root' })
 export class TrackerService {
@@ -24,9 +25,30 @@ export class TrackerService {
       illness,
     };
 
-    this.diseaseCollection.add(disease).then((docref: any) => {
-      const postDoc = this.afs.doc(`tracker/${docref.id}`);
-      postDoc.update({ id: docref.id });
+    const userExists = this.afs
+      .collection('tracker', (ref) => ref.where('owner', '==', owner).limit(1))
+      .snapshotChanges()
+      .pipe(
+        map((actions) =>
+          actions.map((a) => {
+            const data = a.payload.doc.data() as any;
+            data.id = a.payload.doc.id;
+            return data;
+          })
+        )
+      );
+    userExists.pipe(take(1)).subscribe((doc) => {
+      // Checking if the user has already saved its prediction
+      if (doc) {
+        console.log('exists');
+        // const trackerDoc = this.afs.doc(`tracker/${doc[0].id}`);
+      } else {
+        console.log('Not exists');
+        // this.diseaseCollection.add(disease).then((docref: any) => {
+        //   const trackerDoc = this.afs.doc(`tracker/${docref.id}`);
+        //   trackerDoc.update({ id: docref.id });
+        // });
+      }
     });
   }
 }
