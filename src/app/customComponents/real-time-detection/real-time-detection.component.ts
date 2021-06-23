@@ -1,9 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as p5 from 'p5';
 import { AuthService } from '../../services/auth/auth.service';
-// import "node_modules/p5/lib/addons/p5.";
-// import "p5/lib/addons/p5.sound";
-// import * as ml5 from "ml5";
+
 
 //declaring ml5 to use its functions
 declare const ml5: any;
