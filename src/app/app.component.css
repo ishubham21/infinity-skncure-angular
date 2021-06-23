@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+.toolbar-top {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.tool-box {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dash-icon {
+  font-size: 45px !important;
+}
+.tool p {
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-top: 15px;
+  font-size: 18px;
+}
+button{
+  background: transparent;
+  border: none;
+}
+.navbar-icon{
+  position: absolute;
+  left: 65px;
+  font-size: 35px;
+  top: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.topbar button{
+  margin-left: 30px!important;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.tool {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  flex: 0 0 15%;
+  margin: 25px 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 2px 3px 2px #ddd;
+  text-align: center;
+}
+.tool:focus,
+.tool:hover {
+  background-color: #ff5780;
+  color: #fff;
+}
+
+.example-card {
+  width: 20rem;
+  height: 5rem;
+  transition: 0.3s;
+  position: relative;
+}
+
+.card-header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cards-section{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.topbar{
+  background-image: url(./../assets/images/topillus.png);
+  background-size: 100% 14rem;
+  position: relative;
+  height: 11rem;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-bottom: 10px;
+}
+
+.topbar-text{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 500;
+}
+
+mat-sidenav-content{
+    overflow-x: hidden;
+    background-color: #fff;
+    height: 100vh;
+    /* height: calc(100vh - 11rem); */
+}
+
+mat-toolbar{
+  background: #fff;
+}
+
+mat-sidenav{
+  height: 100%;
+  background-color: #ff5780;
+  overflow-x: hidden;
+  transition: all;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 15%;
+}
+
+.sidenav-content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.profilePic{
+  border-radius: 10%;
+  margin: 15px;
+  margin-top: 25px;
+  max-width: 50%;
+  width: 50%;
+}
+
+.usersNameTxt, .greetTxt{
+  color: #fff;
+}
+.usersNameTxt{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.logout-sidenav{
+  position: absolute;
+  bottom: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+  background: #ff5780;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.logout-sidenav:hover{
+  background: #fff;
+  color: #000;
+  border: 0;
+}
+
+@media (max-width: 762px) {
+  .topbar-text {
+    display: none;
+  }
+  /* .topbar{
+      height: 4rem;
+      background: #6494ec;
+  } */
+  .topbar{
+    background: url(./../assets/images/topillus-mob.png);
+    background-size: 100% 14rem;
+  }
+  mat-sidenav-content{
+        overflow-x: hidden;
+        background-color: #fff;
+        height: calc(100vh);
+    }
+  mat-sidenav{
+    width: 60%;
+  }
+}
+
+.mat-container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.sidenav-container {
+  flex: 1;
+}
+
+.is-mobile .sidenav-container {
+  flex: 1 0 auto;
+}
+
+@media (max-width: 762px) {
+  .navbar-icon{
+    left: 30px;
+  }
+  .toolbar-top {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .tool {
+    flex: 0 0 30% !important;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    box-shadow: 1px 1px 1px #ddd;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tool {
+    flex: 0 0 30%;
+  }
+}
+

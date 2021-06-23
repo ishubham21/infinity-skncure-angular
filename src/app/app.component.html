@@ -7,8 +7,8 @@
       </mat-toolbar> -->
 
       <mat-sidenav-container class="sidenav-container">
-          <mat-sidenav #snav [mode]="'over'" *ngIf="authService.userData as user">
-              <div class="sidenav-content">
+          <mat-sidenav #snav [mode]="'over'">
+              <div class="sidenav-content" *ngIf="authService.userData as user">
                   <img src="{{user.photoURL}}" alt="Profile Picture" class="profilePic">
                   <p class="greetTxt">Hello</p>
                   <p class="usersNameTxt">{{user.displayName}}</p>
@@ -22,7 +22,7 @@
                   <div class="main-section">
                       <div class="content">
                           <div class="topbar" *ngIf="authService.userData as user">
-                              <button mat-icon-button  class="mat-btn-menu">
+                              <button mat-icon-button (click)="snav.toggle()" class="mat-btn-menu">
                                   <mat-icon>menu</mat-icon> Menu
                               </button>
                               <h3 class="topbar-text">Beauty is being comfortable and confident in your own skin.</h3>
