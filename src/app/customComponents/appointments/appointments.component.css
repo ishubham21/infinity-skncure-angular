@@ -1,1 +1,6 @@
 .appointment-container{ min-width:320px; min-height: 100vh; height: 100vh; display: flex; justify-content: center; align-items: center;}
+.top-heading{
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
