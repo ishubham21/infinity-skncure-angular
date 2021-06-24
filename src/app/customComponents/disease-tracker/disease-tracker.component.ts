@@ -33,11 +33,7 @@ export class DiseaseTrackerComponent implements OnInit {
     {
       label: 'Cutaneous Horn',
       data: [80, 90, 70, 0, 100, 70, 90, 20, 20],
-    },
-    {
-      label: 'Cutaneous Horn',
-      data: [10],
-    },
+    }
   ];
 
   // CHART COLOR.
@@ -48,7 +44,7 @@ export class DiseaseTrackerComponent implements OnInit {
     },
     {
       // 2nd Year.
-      backgroundColor: 'rgba(30, 169, 224, 0.8)',
+      backgroundColor: '#6794ef',
     },
   ];
 

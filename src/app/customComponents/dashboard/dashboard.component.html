@@ -1,49 +1,55 @@
-<div class="toolbar">
-  <h4 class="toolbar-top text-center">Infinity Tools</h4>
-  <div class="tool-box d-flex">
-      <mat-card class="example-card tool" [routerLink]="['/real-time']"
-          routerLinkActive="router-link-active">
-          <mat-card-header>
-              <mat-card-title class="card-header">Real Time</mat-card-title>
-          </mat-card-header>
-      </mat-card>
-      <mat-card class="example-card tool" [routerLink]="['/posts']" routerLinkActive="router-link-active">
-          <mat-card-header>
-              <mat-card-title class="card-header">Infinity Community</mat-card-title>
-          </mat-card-header>
-      </mat-card>
-      <mat-card class="example-card tool" [routerLink]="['/upload-image']"
-          routerLinkActive="router-link-active">
-          <mat-card-header>
-              <mat-card-title class="card-header">Upload Image</mat-card-title>
-          </mat-card-header>
-      </mat-card>
-      <mat-card class="example-card tool" [routerLink]="['/dark-circles']"
-          routerLinkActive="router-link-active">
-          <mat-card-header>
-              <mat-card-title class="card-header">Dark Cicle Detection</mat-card-title>
-          </mat-card-header>
-      </mat-card>
-      <mat-card class="example-card tool" [routerLink]="['/nearby-doctors']"
-          routerLinkActive="router-link-active">
-          <mat-card-header>
-              <mat-card-title class="card-header">Nearby Doctors</mat-card-title>
-          </mat-card-header>
-      </mat-card>
-      <mat-card class="example-card tool" [routerLink]="['/disease-tracker']" routerLinkActive="router-link-active" >
-          <mat-card-header>
-              <mat-card-title class="card-header">Disease Tracker</mat-card-title>
-          </mat-card-header>
-      </mat-card>
-      <mat-card class="example-card tool" [routerLink]="['/appointments']" routerLinkActive="router-link-active" >
-          <mat-card-header>
-              <mat-card-title class="card-header">See a Doctor</mat-card-title>
-          </mat-card-header>
-      </mat-card>
-      <mat-card class="example-card tool" [routerLink]="['/tips']" routerLinkActive="router-link-active" >
-          <mat-card-header>
-              <mat-card-title class="card-header">General Tips</mat-card-title>
-          </mat-card-header>
-      </mat-card>
-  </div>
+<div *ngIf="authService.userData as user">
+    <div class="toolbar">
+        <h4 class="toolbar-top text-center">Infinity Tools</h4>
+        <div class="tool-box d-flex">
+
+            <mat-card class="example-card tool" [routerLink]="['/upload-image']" routerLinkActive="router-link-active">
+                <mat-card-header>
+                    <mat-card-title class="card-header">Disease Detection</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+
+            <mat-card class="example-card tool" [routerLink]="['/real-time']" routerLinkActive="router-link-active">
+                <mat-card-header>
+                    <mat-card-title class="card-header">Real-Time Detection</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+
+            <mat-card class="example-card tool" [routerLink]="['/disease-tracker']" routerLinkActive="router-link-active">
+                <mat-card-header>
+                    <mat-card-title class="card-header">Your Disease Tracker</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+
+            <mat-card class="example-card tool" [routerLink]="['/dark-circles']" routerLinkActive="router-link-active">
+                <mat-card-header>
+                    <mat-card-title class="card-header">Dark Cicle Detection</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+
+            <mat-card class="example-card tool" [routerLink]="['/posts']" routerLinkActive="router-link-active">
+                <mat-card-header>
+                    <mat-card-title class="card-header">Infinity Community</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+            
+            <mat-card class="example-card tool" [routerLink]="['/appointments']" routerLinkActive="router-link-active">
+                <mat-card-header>
+                    <mat-card-title class="card-header">See a Doctor</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+            
+            <mat-card class="example-card tool" [routerLink]="['/nearby-doctors']" routerLinkActive="router-link-active">
+                <mat-card-header>
+                    <mat-card-title class="card-header">Doctors Near Me</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+            
+            <mat-card class="example-card tool" [routerLink]="['/tips']" routerLinkActive="router-link-active">
+                <mat-card-header>
+                    <mat-card-title class="card-header">General Tips</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
 </div>

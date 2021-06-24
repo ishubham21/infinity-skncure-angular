@@ -1,26 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
-.toolbar-top {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 1rem;
-}
-.tool-box {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.dash-icon {
-  font-size: 45px !important;
-}
-.tool p {
-  font-family: "Montserrat";
-  font-weight: 600;
-  margin-top: 15px;
-  font-size: 18px;
-}
 button{
   background: transparent;
   border: none;
 }
+
 .navbar-icon{
   position: absolute;
   left: 65px;
@@ -34,48 +16,6 @@ button{
   margin-left: 30px!important;
   margin-top: 10px;
   color: #fff;
-}
-
-.tool {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  flex: 0 0 15%;
-  margin: 25px 15px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s;
-  box-shadow: 2px 3px 2px #ddd;
-  text-align: center;
-}
-.tool:focus,
-.tool:hover {
-  background-color: #ff5780;
-  color: #fff;
-}
-
-.example-card {
-  width: 20rem;
-  height: 5rem;
-  transition: 0.3s;
-  position: relative;
-}
-
-.card-header{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.cards-section{
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .topbar{
@@ -158,7 +98,7 @@ mat-sidenav{
 
 .logout-sidenav:hover{
   background: #fff;
-  color: #000;
+  color: #ff5780;
   border: 0;
 }
 
@@ -166,10 +106,6 @@ mat-sidenav{
   .topbar-text {
     display: none;
   }
-  /* .topbar{
-      height: 4rem;
-      background: #6494ec;
-  } */
   .topbar{
     background: url(./../assets/images/topillus-mob.png);
     background-size: 100% 14rem;
@@ -201,28 +137,32 @@ h1.example-app-name {
   flex: 1 0 auto;
 }
 
+.sidenav-routes{
+  color: #fff;
+  font-size: 16px;
+  margin-top: 35px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.sidenav-routes .link{
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 0;
+  transition: 0.2s;
+}
+
+.sidenav-routes .link:hover{
+  background: #ffeef2;
+  color: #ff5780;
+}
+
 @media (max-width: 762px) {
   .navbar-icon{
     left: 30px;
   }
-  .toolbar-top {
-    font-size: 25px;
-    margin-top: 30px;
-  }
-  .tool {
-    flex: 0 0 30% !important;
-    margin: 10px;
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    box-shadow: 1px 1px 1px #ddd;
-    border-radius: 8px;
-  }
 }
 
-@media (max-width: 991px) {
-  .tool {
-    flex: 0 0 30%;
-  }
-}
 
