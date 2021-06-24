@@ -39,6 +39,11 @@
     justify-content: center;
     margin-top: 20px;
 }
+.top-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
 @media (max-width: 1024px){
     .card-footer img{
         max-width: 95%;

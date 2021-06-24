@@ -15,6 +15,12 @@
     width: 80%;
 }
 
+.top-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 #uploadFile {
     top: 0px;
     left: 0px;
