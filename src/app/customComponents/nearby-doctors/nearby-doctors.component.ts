@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http'
   styleUrls: ['./nearby-doctors.component.css']
 })
 export class NearbyDoctorsComponent implements OnInit {
-
+  address!: Object;
   markers: any = [{ position: { lat: 0, lng: 0 }, label: { color: '', text: ''}, title: '', options: { animation: ''} }]
 
   zoom = 16
@@ -31,7 +31,7 @@ export class NearbyDoctorsComponent implements OnInit {
     //if geolocation permissions are granted
     if ('geolocation' in navigator) {
 
-      //using HTML's navigator API to get the current location 
+      //using HTML's navigator API to get the current location
       navigator.geolocation.getCurrentPosition((position) => {
 
         //centering the map around the user's location
@@ -46,10 +46,10 @@ export class NearbyDoctorsComponent implements OnInit {
         //url for API call
         let url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position.coords.latitude},${position.coords.longitude}&radius=2000&type=doctor&keyword=dermatologist&key=AIzaSyCP4WQ-ez8SLvioMAVpEVuY9ctWdDOJ6n4`
 
-        
+
         this.getData(url).subscribe(data => {
           console.log(data);
-          
+
         })
 
 
@@ -64,4 +64,7 @@ export class NearbyDoctorsComponent implements OnInit {
     }
   }
 
+  getAddress(place: any) {
+    this.address = place['formatted_address'];
+  }
 }
