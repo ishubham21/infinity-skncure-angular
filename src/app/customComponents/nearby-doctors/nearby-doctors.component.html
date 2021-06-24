@@ -2,6 +2,7 @@
 <!-- <google-maps></google-maps> -->
 <h1 class="top-heading">Dermatologists Near You</h1>
 <div>
+  <AutocompleteComponent (setAddress)="getAddress($event)" adressType="geocode"></AutocompleteComponent>
     <google-map height="500px" width="100%" [zoom]="zoom" [center]="center" [options]="options">
         <map-marker *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label" [title]="marker.title"
             [options]="marker.options">

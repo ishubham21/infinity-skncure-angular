@@ -51,6 +51,8 @@ import { TipsComponent } from './customComponents/tips/tips.component';
 import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby-doctors.component';
 import { DiseaseTrackerComponent } from './customComponents/disease-tracker/disease-tracker.component';
 import { AppointmentsComponent } from './customComponents/appointments/appointments.component';
+import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
+import { GooglePlacesAutocompleteComponent } from './customComponents/google-places-autocomplete/google-places-autocomplete.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +74,7 @@ import { AppointmentsComponent } from './customComponents/appointments/appointme
     NearbyDoctorsComponent,
     DiseaseTrackerComponent,
     AppointmentsComponent,
+    GooglePlacesAutocompleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -94,6 +97,7 @@ import { AppointmentsComponent } from './customComponents/appointments/appointme
     MatSlideToggleModule,
     AngularFireStorageModule,
     GoogleMapsModule,
+    GooglePlaceModule,
     MatDividerModule,
     MatSidenavModule,
     MatListModule,
