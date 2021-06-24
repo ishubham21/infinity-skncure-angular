@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from "@angular/common/http";
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -97,6 +98,7 @@ import { AppointmentsComponent } from './customComponents/appointments/appointme
     MatSidenavModule,
     MatListModule,
     ChartsModule,
+    HttpClientModule
   ],
   entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],

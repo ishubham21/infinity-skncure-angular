@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { nearbyDocs } from "./nearby-doctors.interface";
+import { HttpClient } from '@angular/common/http'
 
 @Component({
   selector: 'app-nearby-doctors',
@@ -8,7 +8,7 @@ import { nearbyDocs } from "./nearby-doctors.interface";
 })
 export class NearbyDoctorsComponent implements OnInit {
 
-  markers: nearbyDocs[] = []
+  markers: any = [{ position: { lat: 0, lng: 0 }, label: { color: '', text: ''}, title: '', options: { animation: ''} }]
 
   zoom = 16
   center: any
@@ -17,46 +17,51 @@ export class NearbyDoctorsComponent implements OnInit {
     minZoom: 8,
   }
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {  }
+
+  //calling Google Maps API
+  getData = (url: any) => {
+      const headers = { 'mode': 'no-cors' }
+      return this.http.get(url, {headers})
+  }
+
+  ngAfterViewInit(){
     //if geolocation permissions are granted
-    if('geolocation' in navigator){
-      
+    if ('geolocation' in navigator) {
+
       //using HTML's navigator API to get the current location 
       navigator.geolocation.getCurrentPosition((position) => {
-        
+
         //centering the map around the user's location
         this.center = {
           lat: position.coords.latitude,
           lng: position.coords.longitude,
         }
+
+        //adding marker on the user's location
+        this.markers.push({ position: { lat: position.coords.latitude, lng: position.coords.longitude }, label: { color: 'red', text: 'Your Location' }, options: { animation: google.maps.Animation.BOUNCE } })
+
+        //url for API call
+        let url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position.coords.latitude},${position.coords.longitude}&radius=2000&type=doctor&keyword=dermatologist&key=AIzaSyCP4WQ-ez8SLvioMAVpEVuY9ctWdDOJ6n4`
+
+        
+        this.getData(url).subscribe(data => {
+          console.log(data);
+          
+        })
+
+
       }, (err) => {
         alert('Some error occured' + err)
       })
-      
+
     }
     //if permissions are not granted
-    else{
+    else {
       alert('Please turn on your location!')
     }
-    
   }
 
-  addMarker() {
-    this.zoom = 12
-    this.markers.push({
-      position: {
-        lat: this.center.lat + ((Math.random() - 0.5) * 2) / 10,
-        lng: this.center.lng + ((Math.random() - 0.5) * 2) / 10,
-      },
-      label: {
-        color: 'red',
-        text: 'Marker label ' + (this.markers.length + 1),
-      },
-      title: 'Marker title ' + (this.markers.length + 1),
-      options: { animation: google.maps.Animation.BOUNCE },
-    }) 
-  }
 }
