@@ -18,6 +18,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatSliderModule } from "@angular/material/slider";
 
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ChartsModule } from 'ng2-charts';
@@ -101,6 +102,7 @@ import { GooglePlacesAutocompleteComponent } from './customComponents/google-pla
     MatDividerModule,
     MatSidenavModule,
     MatListModule,
+    MatSliderModule,
     ChartsModule,
     HttpClientModule
   ],

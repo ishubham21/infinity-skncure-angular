@@ -1,12 +1,23 @@
-<!-- <div #gmap style="width:100%;height:400px"></div> -->
-<!-- <google-maps></google-maps> -->
 <h1 class="top-heading">Dermatologists Near You</h1>
-<div>
-  <AutocompleteComponent (setAddress)="getAddress($event)" adressType="geocode"></AutocompleteComponent>
-    <google-map height="500px" width="100%" [zoom]="zoom" [center]="center" [options]="options">
-        <map-marker *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label" [title]="marker.title"
-            [options]="marker.options">
-        </map-marker>
-    </google-map>
+<p class="top-2">Showing doctors in 2kms radius</p>
+
+
+<div class="map-container">
+    <div #map class="g-map"></div>
 </div>
+
+<div *ngIf="doctorsList;else noDoctors">
+    <h2 class="explore">Explore More</h2>
+    <div class="card-container">
+        <div class="card" *ngFor="let doctor of doctorsList">
+            <h2>{{doctor.name}}</h2>
+            <p><strong>Rating:</strong>{{doctor.rating}}</p>
+            <p><strong>Vicinity:</strong>{{doctor.vicinity}}</p>
+        </div>
+    </div>
+</div>
+
+<ng-template #noDoctors>
+    <h2 class="explore">No doctors found</h2>
+</ng-template>
 
