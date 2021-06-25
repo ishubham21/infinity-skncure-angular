@@ -54,6 +54,7 @@ import { DiseaseTrackerComponent } from './customComponents/disease-tracker/dise
 import { AppointmentsComponent } from './customComponents/appointments/appointments.component';
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { GooglePlacesAutocompleteComponent } from './customComponents/google-places-autocomplete/google-places-autocomplete.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -104,7 +105,13 @@ import { GooglePlacesAutocompleteComponent } from './customComponents/google-pla
     MatListModule,
     MatSliderModule,
     ChartsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],

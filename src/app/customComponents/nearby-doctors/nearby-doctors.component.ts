@@ -13,6 +13,8 @@ let options = {
   maximumAge: 0,
 };
 
+let infowindow: any
+
 
 @Component({
   selector: 'app-nearby-doctors',
@@ -48,26 +50,31 @@ export class NearbyDoctorsComponent implements OnInit {
         //powering nearby serach with center = user's location and radius = 4000mts
         service.nearbySearch({
           location: { lat: position.coords.latitude, lng: position.coords.longitude },
-          radius: 4000,
+          radius: 5000,
           type: ['doctor'],
           keyword: ['dermatologist']
         }, (results: string | any[], status: any) => {
           
           this.doctorsList = results
+
+          //create a marker for user's location
+          this.createMarker({ geometry: { location: { lat: position.coords.latitude, lng: position.coords.longitude } }, name: 'Your Location' })
+
           //if status is ok, add markers
           if (status === google.maps.places.PlacesServiceStatus.OK) {
 
-            //create a marker for user's location
-            this.createMarker({ geometry: { location: { lat: position.coords.latitude, lng: position.coords.longitude }}, name: 'Your Location' })
             for (let i = 0; i < results.length; i++) {
-              this.createMarker(results[i]);
+              this.createMarker(results[i])
             }
+          }
+          else{
+            this.doctorsList = null
           }
         });
       
       //in case of error - report
       }, (err) => {
-        alert('Error occured. Please check your connection and refresh!')
+        alert('Error in acquiring position occured.')
       })
 
     }
@@ -91,5 +98,11 @@ export class NearbyDoctorsComponent implements OnInit {
       label: place.name,
       options: { animation: google.maps.Animation.BOUNCE }
     });
+
+    google.maps.event.addListener(marker, 'click',  () => {
+      infowindow.setContent(place.name);
+      infowindow.open(map, this);
+    });
+
   }
 }
