@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrackerService } from 'src/app/services/tracker/tracker.service';
 
 @Component({
   selector: 'app-disease-tracker',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./disease-tracker.component.css'],
 })
 export class DiseaseTrackerComponent implements OnInit {
-  constructor() {}
+  constructor(private trackerService: TrackerService) {}
 
   // ADD CHART OPTIONS.
   chartOptions = {
@@ -57,5 +58,7 @@ export class DiseaseTrackerComponent implements OnInit {
     console.log(event);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.trackerService.gettingTrackerData());
+  }
 }
