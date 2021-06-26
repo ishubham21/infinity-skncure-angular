@@ -43,9 +43,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 # Features
 
 * **Can Detect 11 skin diseases:** This skin diseases model has been trained to predict and differentiate between 11 most prominent skin disease. These diseases are: 
-    *Acne 
-    *Contact Dermatitis
-    *Corn
-    *Cutaneous Horn
-    *Eczema 
-    *Herpes Zoster
+...(*Acne) 
+...(*Contact Dermatitis)
+...(*Corn)
+...(*Cutaneous Horn)
+...(*Eczema) 
+...(*Herpes Zoster)
