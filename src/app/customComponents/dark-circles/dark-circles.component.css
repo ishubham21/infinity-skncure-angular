@@ -9,10 +9,18 @@
 
 .mat-toolbar-single-row button {
     width: 200px;
+    background: #6794ef;
+    color: #fff;
 }
 
 .mat-form-field {
     width: 80%;
+}
+
+.top-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 #uploadFile {

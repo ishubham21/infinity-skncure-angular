@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from "@angular/common/http";
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -17,6 +18,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatSliderModule } from "@angular/material/slider";
 
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ChartsModule } from 'ng2-charts';
@@ -50,6 +52,9 @@ import { TipsComponent } from './customComponents/tips/tips.component';
 import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby-doctors.component';
 import { DiseaseTrackerComponent } from './customComponents/disease-tracker/disease-tracker.component';
 import { AppointmentsComponent } from './customComponents/appointments/appointments.component';
+import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
+import { GooglePlacesAutocompleteComponent } from './customComponents/google-places-autocomplete/google-places-autocomplete.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -71,6 +76,7 @@ import { AppointmentsComponent } from './customComponents/appointments/appointme
     NearbyDoctorsComponent,
     DiseaseTrackerComponent,
     AppointmentsComponent,
+    GooglePlacesAutocompleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -93,10 +99,19 @@ import { AppointmentsComponent } from './customComponents/appointments/appointme
     MatSlideToggleModule,
     AngularFireStorageModule,
     GoogleMapsModule,
+    GooglePlaceModule,
     MatDividerModule,
     MatSidenavModule,
     MatListModule,
+    MatSliderModule,
     ChartsModule,
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   entryComponents: [ResultPopupComponent, DialogPopupComponent],
   providers: [AuthService, AuthGuard],

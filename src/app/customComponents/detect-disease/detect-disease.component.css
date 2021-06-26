@@ -9,6 +9,8 @@
 
 .mat-toolbar-single-row button {
     width: 200px;
+    background-color: #6794ef;
+    color: #fff;
 }
 
 .mat-form-field {
@@ -38,6 +40,11 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+.top-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 @media (max-width: 1024px){
     .card-footer img{

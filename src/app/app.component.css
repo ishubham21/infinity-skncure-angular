@@ -1,0 +1,168 @@
+button{
+  background: transparent;
+  border: none;
+}
+
+.navbar-icon{
+  position: absolute;
+  left: 65px;
+  font-size: 35px;
+  top: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.topbar button{
+  margin-left: 30px!important;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.topbar{
+  background-image: url(./../assets/images/topillus.png);
+  background-size: 100% 14rem;
+  position: relative;
+  height: 11rem;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-bottom: 10px;
+}
+
+.topbar-text{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 500;
+}
+
+mat-sidenav-content{
+    overflow-x: hidden;
+    background-color: #fff;
+    height: 100vh;
+    /* height: calc(100vh - 11rem); */
+}
+
+mat-toolbar{
+  background: #fff;
+}
+
+mat-sidenav{
+  height: 100%;
+  background-color: #ff5780;
+  overflow-x: hidden;
+  transition: all;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 15%;
+}
+
+.sidenav-content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.profilePic{
+  border-radius: 10%;
+  margin: 15px;
+  margin-top: 25px;
+  max-width: 50%;
+  width: 50%;
+}
+
+.usersNameTxt, .greetTxt{
+  color: #fff;
+}
+.usersNameTxt{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.logout-sidenav{
+  position: absolute;
+  bottom: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+  background: #ff5780;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.logout-sidenav:hover{
+  background: #fff;
+  color: #ff5780;
+  border: 0;
+}
+
+@media (max-width: 762px) {
+  .topbar-text {
+    display: none;
+  }
+  .topbar{
+    background: url(./../assets/images/topillus-mob.png);
+    background-size: 100% 14rem;
+  }
+  mat-sidenav-content{
+        overflow-x: hidden;
+        background-color: #fff;
+        height: calc(100vh);
+    }
+  mat-sidenav{
+    width: 60%;
+  }
+}
+
+.mat-container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.sidenav-container {
+  flex: 1;
+}
+
+.is-mobile .sidenav-container {
+  flex: 1 0 auto;
+}
+
+.sidenav-routes{
+  color: #fff;
+  font-size: 16px;
+  margin-top: 35px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.sidenav-routes .link{
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 0;
+  transition: 0.2s;
+}
+
+.sidenav-routes .link:hover{
+  background: #ffeef2;
+  color: #ff5780;
+}
+
+@media (max-width: 762px) {
+  .navbar-icon{
+    left: 30px;
+  }
+}
+
+

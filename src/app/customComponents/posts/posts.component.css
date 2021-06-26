@@ -10,6 +10,11 @@
 .container-xxl {
   padding: 0;
 }
+.top-heading{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
 .posts-header {
   width: 100%;
   min-height: 15rem;

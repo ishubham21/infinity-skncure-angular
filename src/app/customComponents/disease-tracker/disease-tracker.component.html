@@ -1,5 +1,7 @@
-<div>
-    <canvas baseChart [chartType]="'bar'" [datasets]="chartData" [labels]="labels" [options]="chartOptions"
-        [legend]="true" [colors]="colors" (chartClick)="onChartClick($event)">
-    </canvas>
+<div class="main-t-cont">
+    <div class="tracker-container">
+        <canvas baseChart [chartType]="'bar'" [datasets]="chartData" [labels]="labels" [options]="chartOptions"
+            [legend]="true" [colors]="colors" (chartClick)="onChartClick($event)">
+        </canvas>
+    </div>
 </div>

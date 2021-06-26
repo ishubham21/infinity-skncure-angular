@@ -1,0 +1,18 @@
+.tracker-container{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+.main-t-cont{
+    display: flex;
+    justify-content: center;
+}
+canvas{
+    justify-self: center;
+}
+
+@media(max-width: 990px){
+    .tracker-container{
+        width: 100%;
+    }
+}

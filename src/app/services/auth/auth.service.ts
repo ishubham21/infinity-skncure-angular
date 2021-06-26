@@ -11,7 +11,7 @@ import { User } from './user';
 
 @Injectable()
 export class AuthService {
-  userData!: firebase.User;
+  userData!: any;
 
   constructor(
     private afAuth: AngularFireAuth,
@@ -24,7 +24,7 @@ export class AuthService {
         //if user exists, fetch his credentials and pass it
         this.userData = user;
         this.router.navigate(['/dashboard']);
-        
+
       } else {
         this.router.navigate(['/']);
       }
@@ -56,6 +56,7 @@ export class AuthService {
   //function to logout the user
   logout() {
     this.afAuth.signOut().then(() => {
+      this.userData = null;
       this.router.navigate(['/']);
     });
   }

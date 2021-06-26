@@ -1,1 +1,67 @@
-<router-outlet></router-outlet>
+<!--If user exists, show his/her details-->
+<div class="row top-row">
+
+  <div class="mat-container">
+    <!-- <mat-toolbar class="mat-toolbar topbar" *ngIf="authService.userData">
+
+      </mat-toolbar> -->
+
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav #snav [mode]="'over'" *ngIf="authService.userData as user">
+        <div class="sidenav-content">
+          <img src="{{user.photoURL}}" alt="Profile Picture" class="profilePic">
+          <p class="greetTxt">Hello</p>
+          <p class="usersNameTxt">{{user.displayName}}</p>
+
+          <div class="sidenav-routes">
+              <div class="link" [routerLink]="['/dashboard']" routerLinkActive="router-link-active" (click)="toggle()">
+                  Home
+              </div>
+
+              <div class="link" [routerLink]="['/upload-image']" routerLinkActive="router-link-active" (click)="toggle()">
+                 Disease Detection
+              </div>
+
+              <div class="link" [routerLink]="['/real-time']" routerLinkActive="router-link-active" (click)="toggle()">
+                 Real-Time
+              </div>
+
+              <div class="link" [routerLink]="['/disease-tracker']" routerLinkActive="router-link-active" (click)="toggle()">
+                Tracker
+              </div>
+
+              <div class="link" [routerLink]="['/nearby-doctors']" routerLinkActive="router-link-active" (click)="toggle()">
+                Nearby Doctors
+              </div>
+
+              <div class="link" [routerLink]="['/tips']" routerLinkActive="router-link-active" (click)="toggle()">
+                General Tips
+              </div>
+          </div>
+          <button (click)="authService.logout()" class="logout-sidenav">Logout</button>
+        </div>
+      </mat-sidenav>
+
+
+      <mat-sidenav-content>
+        <section class="f-body">
+          <div class="main-section">
+            <div class="content">
+              <div class="topbar" *ngIf="authService.userData as user">
+                <button mat-icon-button (click)="toggle()" class="mat-btn-menu">
+                  <mat-icon>menu</mat-icon> Menu
+                </button>
+                <h3 class="topbar-text">Beauty is being comfortable and confident in your own skin.</h3>
+              </div>
+              
+              <router-outlet></router-outlet>
+
+            </div>
+          </div>
+
+        </section>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+
+</div>

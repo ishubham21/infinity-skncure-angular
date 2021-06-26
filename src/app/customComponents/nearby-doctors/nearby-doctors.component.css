@@ -1,0 +1,50 @@
+.top-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+.top-2{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.explore{
+    margin: auto 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.map-container{
+    display: flex;
+    justify-content: center;
+}
+.g-map{
+    min-width: 90%;
+    width: 90%;
+    height: 500px;
+    margin-bottom: 2rem;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    flex: 0 0 20%;
+    margin: 25px 15px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px #ddd;
+    text-align: center;
+}
+
+@media (max-width: 990px){
+    .g-map{
+        width: 95%;
+    }
+    .card{
+        flex: 0 0 70%;
+    }
+}
