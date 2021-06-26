@@ -8,11 +8,11 @@ There are a lot of doctors and researchers doing their best in this field of med
 
 There are still very less or no technological resources which can add some value to the lives of people who know very little about such disorders.
 
-To tackle this issue, we have created a web-based skin disease predictor which can be used as a native application by the users to predict their skin disorders just by uploading a picture of their skin using a machine learning model trained on the top of TensorflowJS. This app also supports real-time detection of skin diseases by which users can directly use their cameras to focus on their textured areas and get instant results. 
+To tackle this issue, we have created a web-based skin disease predictor which can be used as a native application by the users to predict their skin disorders just by uploading a picture of their skin using a machine learning model trained using transfer learning. This app also supports real-time detection of skin diseases by which users can directly use their cameras to focus on their textured areas and get instant results. 
 
-Further, this application also recommends nearby doctors automatically by using their current location. This app has the ability to predict over 10 skin diseases quite accurately.
+Further, this application also recommends nearby doctors automatically by using their current location. This app has the ability to predict over 10 skin diseases quite accurately. 
 
-We've also included a feature of global chat within this application to help the users in posting their queries of each kind and get their doubts resolved. This way, users can even take help from real doctors through this feature without even going out.
+We've also included a feature with which users can schedule appointments with the dermatologits to help the users in getting themselves diagnosed with real practitioner, and get their doubts resolved. This way, users can even take help from real doctors through this feature without even stepping out.
 
 # How to run the application 
 
@@ -22,7 +22,7 @@ git clone https://github.com/ishubham21/infinity-skncure-angular/
 cd infinity-skncure-angular
 ```
 
-##Install the required modules
+## Install the required modules
 
 ```shell
 npm i
