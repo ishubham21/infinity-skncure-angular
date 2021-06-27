@@ -128,9 +128,9 @@ Skin diseases are among the most common health problems in humans. Considering t
 
 With **Infinity-SknCure** people get an opportunity to self-diagnose their skin disorders from the comfort of their home. It offers an opportunity to screen people and to identify multiple conditions on a single platform. An integrated approach in communities and schools can potentially reduce costs and cut down delays in diagnosis as well as promote skin health for all.
 
-[Reports](https://www.canwelivebetter.bayer.com/health/tanning-delusion-why-do-we-ignore-risks-skin-cancer) also point that men are very less likely to use sunscreens which is a major reason why many people suffer from skin cancers and it again points towards the associated stigmas and with this application, we want to fight these social stigmas.
+[Reports](https://www.canwelivebetter.bayer.com/health/tanning-delusion-why-do-we-ignore-risks-skin-cancer) also point that men are less likely to use sunscreens which is a major reason why many people suffer from skin cancers and it again points towards the associated stigmas, and with this application, we want to fight these social stigmas.
 
-## This app is built on the basis of previous studies conducted in this field
+## Infinity SknCure is built on the basis of previous studies conducted in this field
 
 * [World Health Organization](https://apps.who.int/iris/bitstream/handle/10665/69229/WHO_FCH_CAH_05.12_eng.pdf?sequence=1&isAllowed=y)
 * [US National Library of Medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5718374/)
@@ -141,16 +141,42 @@ With **Infinity-SknCure** people get an opportunity to self-diagnose their skin 
 
 # Feedbacks and Testimonials
 
-After conducting several survey and feedback sessions, we have compiled a list of feedbacks and testimonials received from various users. It contains both positive and negative feedbacks that has helped us in evolving this application.
+After conducting several survey and feedback sessions, we have compiled a list of feedbacks from various users. Users were selected randomly, and the maximum of these users belong to the medical background. 
+
 
 * Users were asked to rate Infinity SknCure based on their personal experiences on a scale of 1 - 5. Here are the results - 
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/feedback1.png"></p>
 
-The following graph shows the likeability (in percent) of the features among the users -
+* The following graph shows the likeability (in percent) of the features among the users -
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/feedback2.png"></p>
 
+* This list contains both positive and negative feedbacks that have helped us in evolving this application.
+
+| Name of the user  | Organization | Feedback received |
+| ------------- | ------------- | ------------- |
+| Taneesha Mathur  | Mody University | The fact that the app allows me to consult doctors is very helpful. Most people don't rely 100% on AI, and so this feature is amazing.  |
+| Tushar Bhardwaj  | Government Medical College, Barmer | I really find it useful  |
+| Shristi Goyal | Rajiv Gandhi University of Health Sciences | As a doctor I personally don't like that much AI but yeah !! It's super cool |
+| Gagan Irani | Rajiv Gandhi University of Health Sciences | Instant information that we get is soo reliving and info about near by docs is a great feature and very helpful |
+| Mohan | Rajiv Gandhi University of Health Sciences | Its good initiative and helpful in this pandemic world. |
+| Adnan Ahmed | JJM Medical College | Pretty accurate, if take photo only of the face. 
+1. Real time photo of only face in lit room 100% normal.
+
+2. Same photo imported - slightly reduced value but still near 100
+
+3. In a dark room with flash - near 100 as well
+
+4. No.1 and 2 photo edited to look darker(for dark circles)- was not fooled still normal skin
+
+5. Photo which was taken from a distance(approx 1 m)- acne 61%.
+
+ I will recommend to first it runs a facial recognition (finding eyes, nose, mouth,etc) to find a face, then zoom on that so it looks like a photo taken of only face.
+Then it runs the skin disease script.
+
+Although I only tried one photo but still thats a bit too much difference(the t shirt i was wearing was kinda red-pink if that had something to do with it) |
+ 
 # Sources for dataset -
 * Dermnet NZ - [https://dermnetnz.org](https://dermnetnz.org)
 * DermIS - [https://dermis.net](https://dermis.net)
