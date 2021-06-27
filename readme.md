@@ -2,6 +2,21 @@
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/logo.png"></p>
 
+# Table of Contents
+
+* [Our purpose and motivation behind Infinity SknCure](#our-purpose-and-motivation-behind-infinity-skncure)
+* [How to run the application](#how-to-run-the-application)
+* [Features](#features)
+    * [Features in previous version](#version-1-had-the-following-features)
+    * [Features in present version](#version-2-has-the-following-features--the-features-listed-above)
+* [Diseases Listed in the model](#diseases-listed-in-the-model--)
+* [Do we even need this application?](#do-we-even-need-this-application)
+* [Research guides for Infinity SknCure](infinity-skncure-is-built-on-the-basis-of-previous-studies-conducted-in-this-field)
+* [Feedback and Testimonials](#feedbacks-and-testimonials)
+* [Sources of dataset](#sources-of-dataset--)
+
+#Our purpose and motivation behind Infinity SknCure
+
 **“The finest clothing made is a person’s own skin” – Mark Twain.**
 
 Your skin is your largest organ—that should be enough to tell you that skin care is vital. But still, we know many people assume it isn’t. Others are unsure. Hence the reason “why skincare is important” is one of the top skin-related Google searches.
@@ -180,7 +195,7 @@ Video 4 - [Link]()
 | Ashi Dubey | Rajasthan Technical University | The whole host of features that you ahve put in are amazing and also easy to handle and understand making it user friendly. As for any suggestion, int the training dataset yo've put in, do include low megapixel images as well so that people who upload pictures with low quality camera can also experience near accuracies. |
 | Pradhumn Singh | Rajasthan Technical University, Kota | LOVE IT, it would be more better if you make it secure. |
 
-# Sources for dataset -
+# Sources of dataset -
 * Dermnet NZ - [https://dermnetnz.org](https://dermnetnz.org)
 * DermIS - [https://dermis.net](https://dermis.net)
 * Dermatology Atlas - [http://www.atlasdermatologico.com.br/browse.jsf](http://www.atlasdermatologico.com.br/browse.jsf)
