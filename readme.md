@@ -20,59 +20,72 @@ In a world where skin diseases have a stigma around them and are treated as tabo
 
 Talking about India, [reports](https://www.jmgims.co.in/article.asp?issn=0971-9903;year=2016;volume=21;issue=2;spage=111;epage=115;aulast=Jain) show that the prevalence of skin diseases is around 60%. In other words, about 60% of the population in the age band of 21 and 55 suffer from a skin disorder. This data makes skin disorders even more alarming, yet people choose to self-diagnose themselves which can make these disorders even worse. With Infinity SknCure, we are aimed to deliver the right diagnosis to people all around the world.      
 
-Using Infinity SknCure doesn't requires any knowledge of prior knowledge. It is as easy as using your Gmail application.   
+Using Infinity SknCure doesn't require any knowledge of prior knowledge. It is as easy as using your Gmail application.   
 
-Infinity SknCure can be used as a native application by the users to predict their skin disorders just by uploading a picture of their skin. This application makes use of a machine learning model trained to identify 10 different skin diseases. The real-time detection support in Infinity SknCure allows users to even use their cameras and get instant results right in front of them. 
+Infinity SknCure can be used as a native application by users to predict their skin disorders just by uploading a picture of their skin. This application makes use of a machine learning model trained to identify 10 different skin diseases. The real-time detection support in Infinity SknCure allows users to even use their cameras and get instant results right in front of them. 
 
 Further, Infinity SknCure also recommends nearby doctors automatically by using their current location on a Google Map. 
 
-We've also included a feature with which users can schedule appointments with the dermatologits to help the users in getting themselves diagnosed with real practitioner, and get their doubts resolved. This way, users can even take help from real doctors through this feature without even stepping out.
+We've also included a feature with which users can schedule appointments with the dermatologist to help the users in getting themselves diagnosed with a real practitioner, and get their doubts resolved. This way, users can even take help from real doctors through this feature without even stepping out.
 
 # How to run the application 
 
-## Make sure you have node and npm installed. In the terminal, run the following commands:
+### Make sure you have node and npm installed. In the terminal, run the following commands:
 
 ```shell
 node --version
 npm --version
 ```
 
-## Install Angular CLI globally
+### Install Angular CLI globally
 
 ```shell
 npm install - g @angular/cli
 ```
 
 
-## Get the Code
+### Get the Code
 ```shell
 git clone https://github.com/ishubham21/infinity-skncure-angular/
 cd infinity-skncure-angular
 ```
 
-## Install the required modules/dependencies
+### Install the required modules/dependencies
 
 ```shell
 npm i
 ```
 
-## Development server
+### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 # Features
 
-* **Can Detect 11 skin diseases:** This skin diseases model has been trained to predict and differentiate between 10 most prominent skin disease. These diseases are: Acne, Contact Dermatitis, Corn, Cutaneous Horn, Eczema, Herpes Zoster, Melanoma, Psoriasis, Rosacea, and Utlicaria.
+### Version 1 had the following features: 
 
-* **Trained on 300,000 images:** The model has been trained on over 1500 images which were iterated 200 times each. The model is trained keeping in mind the various skin types (normal, dry, oily, combination, etc.), colors (white, black, brown, porcelain, ivory, sand, beige, etc.), body-parts (scalp, forehead, ears, nose, cheeks, lips, chin, neck, chest, back, arms, hands, palms, excretory organs (both male and female), thighs, feet and toes).
+Link to this version's code: [https://github.com/ishubham21/infinity-skncure](https://github.com/ishubham21/infinity-skncure)
+
+* **Can Detect 11 skin diseases:** The skin diseases model has been trained to predict and differentiate between the 10 most prominent skin diseases. These diseases are Acne, Contact Dermatitis, Corn, Cutaneous Horn, Eczema, Herpes Zoster, Melanoma, Psoriasis, Rosacea, and Urticaria.
+
+* **Trained on 300,000 images:** The model has been trained on over 1500 images which were iterated 200 times each. The model is trained keeping in mind the various skin types (normal, dry, oily, combination, etc.), colors (white, black, brown, porcelain, ivory, sand, beige, etc.), body parts (scalp, forehead, ears, nose, cheeks, lips, chin, neck, chest, back, arms, hands, palms, excretory organs (both male and female), thighs, feet, and toes).
+
+* **Progressive Web App (PWA):** Infinity SknCure is a Progressive Web App. In other words, though Infinity SknCure is a website, it can be installed and used as a native application on almost every operating system (including macOS, iOS, Windows, and Android).  
+
+* **Upload Image Feature:** This feature allows the users to use images saved in their devices to predict skin diseases from them. 
+
+* **Prediction works offline:** Since this application is a PWA, all the required files are already cached during installation. It allows the users to make use of features like detection even when they are offline. 
+
+* **Global Chat Feature:** Skin diseases also have shown effects on the mental health of people suffering from them. It brings down their confidence. Thus, the earlier version of Infinity SknCure had a feature of global chat which allowed users to chat with other people and dermatologists globally. It allowed the users to talk their hearts out and meet with like-minded people from throughout the world. This feature has now been upgraded to be known as 'Infinity Community'. 
+
+* **Ability to search nearby dermatologists:** This version of Infinity SknCure had a feature that allowed users to search doctors near them using a simple Google Search. But this feature has now been completely turned over to provide a better experience using in-app Google Maps.
+
+
+We understand the fact that not everyone completely trust the 
 
 ## Diseases listed in the model - 
 * Acne
