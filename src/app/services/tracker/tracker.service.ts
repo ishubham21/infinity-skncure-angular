@@ -90,21 +90,6 @@ export class TrackerService {
           })
         )
       );
-    const plot = userExists.pipe(take(1)).subscribe((doc) => {
-      // Checking if the user exists or not to plot
-      if (doc.length !== 0) {
-        console.log('exists');
-        let uniqueLabels = Object.values(
-          doc[0].illness
-            .map((item: any) => item.name)
-            .filter(
-              (value: any, index: any, self: any) =>
-                self.indexOf(value) === index
-            )
-        );
-        console.log(uniqueLabels);
-      }
-    });
-    return plot;
+    return userExists.pipe(take(1));
   }
 }
