@@ -1,4 +1,4 @@
-# Infinity SknCure
+# <p align="center"> Infinity SknCure</p>
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/logo.png"></p>
 
