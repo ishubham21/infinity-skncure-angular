@@ -161,21 +161,8 @@ After conducting several survey and feedback sessions, we have compiled a list o
 | Shristi Goyal | Rajiv Gandhi University of Health Sciences | As a doctor I personally don't like that much AI but yeah !! It's super cool |
 | Gagan Irani | Rajiv Gandhi University of Health Sciences | Instant information that we get is soo reliving and info about near by docs is a great feature and very helpful |
 | Mohan | Rajiv Gandhi University of Health Sciences | Its good initiative and helpful in this pandemic world. |
-| Adnan Ahmed | JJM Medical College | Pretty accurate, if take photo only of the face. 
-1. Real time photo of only face in lit room 100% normal.
-
-2. Same photo imported - slightly reduced value but still near 100
-
-3. In a dark room with flash - near 100 as well
-
-4. No.1 and 2 photo edited to look darker(for dark circles)- was not fooled still normal skin
-
-5. Photo which was taken from a distance(approx 1 m)- acne 61%.
-
- I will recommend to first it runs a facial recognition (finding eyes, nose, mouth,etc) to find a face, then zoom on that so it looks like a photo taken of only face.
-Then it runs the skin disease script.
-
-Although I only tried one photo but still thats a bit too much difference(the t shirt i was wearing was kinda red-pink if that had something to do with it) |
+| Adnan Ahmed | JJM Medical College | Pretty accurate, if take photo only of the face. 1. Real time photo of only face in lit room 100% normal. 2. Same photo imported - slightly reduced value but still near 100 3. In a dark room with flash - near 100 as well. 4. No.1 and 2 photo edited to look darker(for dark circles)- was not fooled still normal skin. 5. Photo which was taken from a distance(approx 1 m)- acne 61%. I will recommend to first run a facial recognition (finding eyes, nose, mouth,etc) to find a face, then zoom on that so it looks like a photo taken of only face.
+Then it runs the skin disease script. Although I only tried one photo but still thats a bit too much difference(the t shirt i was wearing was kinda red-pink if that had something to do with it) |
  
 # Sources for dataset -
 * Dermnet NZ - [https://dermnetnz.org](https://dermnetnz.org)
