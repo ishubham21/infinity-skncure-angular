@@ -53,13 +53,18 @@ export class TrackerService {
         const trackerDoc = this.afs.doc(`tracker/${doc[0].id}`);
         // Checking whether already tested the same day for the same disease
         let newIllnessArray = Object.values(doc[0].illness).filter(
+          (element: any) => element.createdAt != illnessObject.createdAt
+        );
+        let newIllnessArray2 = Object.values(doc[0].illness).filter(
           (element: any) =>
             element.createdAt == illnessObject.createdAt &&
             element.name != illnessObject.name
         );
 
         // Adding new pridiction
+        newIllnessArray.push(...newIllnessArray2);
         newIllnessArray.push(illnessObject);
+        console.log(newIllnessArray);
         trackerDoc.update({ illness: newIllnessArray });
         this.saved = true;
         this.router.navigate(['/disease-tracker']);
