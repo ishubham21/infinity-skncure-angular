@@ -2,19 +2,47 @@
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/logo.png"></p>
 
-A very recent [report](https://www.who.int/neglected_diseases/news/WHO-publishes-pictorial-training-guide-on-neglected-skin-disease/en/) by World Health Organization(WHO) shows that skin diseases are among the most common of all human health afflictions and affect almost 900 million people in the world at any time. Five common conditions account for over 80% of all skin diseases.
+**“The finest clothing made is a person’s own skin” – Mark Twain.**
 
-There are a lot of doctors and researchers doing their best in this field of medical science, there are Machine Learning models present with very high accuracy and precision to help the researchers in this field to make their study more effective, but all these technological advancements are still quite far away from the reach of the general public. 
+Your skin is your largest organ—that should be enough to tell you that skin care is vital. But still, we know many people assume it isn’t. Others are unsure. Hence the reason “why skincare is important” is one of the top skin-related Google searches.
 
-There are still very less or no technological resources which can add some value to the lives of people who know very little about such disorders.
+Its purpose that is to keep our insides in may seem simple, but when looked closely, it plays a surprising number of roles in our lives.
 
-To tackle this issue, we have created a web-based skin disease predictor which can be used as a native application by the users to predict their skin disorders just by uploading a picture of their skin using a machine learning model trained using transfer learning. This app also supports real-time detection of skin diseases by which users can directly use their cameras to focus on their textured areas and get instant results. 
+Between us and the external world lies an interface that makes up almost 16% of our body weight, that is, our SKIN - the largest organ in our bodies.
 
-Further, this application also recommends nearby doctors automatically by using their current location. This app has the ability to predict over 10 skin diseases quite accurately. 
+A very recent [report](https://www.who.int/neglected_diseases/news/WHO-publishes-pictorial-training-guide-on-neglected-skin-disease/en/) by World Health Organization(WHO) shows that skin diseases are among the most common of all human health afflictions and affect almost **900 million people** in the world at any time.
+
+There are a lot of doctors, dermatologists, and researchers doing their best in this field of medical science. There even are high-accuracy Machine Learning models to help the researchers in this field in making their study more effective, but all these technological advancements are still far-flung from the capacity of general folks. We as a society are yet to leverage these technological advancements.
+
+Accounting to the small number of technological resources, there is still a vast scope of covering the lives of people with less or no knowledge about such skin diseases. There is still some revolution waiting to turn all these lives.  
+
+In a world where skin diseases have a stigma around them and are treated as taboo, we wanted to create an application that could make a difference. We wanted to make something that could be easily, and immediately available to the users, a thing that could help people in multiple ways. Thus, we decided to develop **Infinity SknCure**, which is a web-based skin disease predictor. WHO [says](https://apps.who.int/iris/bitstream/handle/10665/69229/WHO_FCH_CAH_05.12_eng.pdf?sequence=1&isAllowed=y), "Basic health education is needed to identify these disorders which can help us in reducing the morbidity substantially", and Infinity SknCure is a small step in this direction.
+
+Talking about India, [reports](https://www.jmgims.co.in/article.asp?issn=0971-9903;year=2016;volume=21;issue=2;spage=111;epage=115;aulast=Jain) show that the prevalence of skin diseases is around 60%. In other words, about 60% of the population in the age band of 21 and 55 suffer from a skin disorder. This data makes skin disorders even more alarming, yet people choose to self-diagnose themselves which can make these disorders even worse. With Infinity SknCure, we are aimed to deliver the right diagnosis to people all around the world.      
+
+Using Infinity SknCure doesn't requires any knowledge of prior knowledge. It is as easy as using your Gmail application.   
+
+Infinity SknCure can be used as a native application by the users to predict their skin disorders just by uploading a picture of their skin. This application makes use of a machine learning model trained to identify 10 different skin diseases. The real-time detection support in Infinity SknCure allows users to even use their cameras and get instant results right in front of them. 
+
+Further, Infinity SknCure also recommends nearby doctors automatically by using their current location on a Google Map. 
 
 We've also included a feature with which users can schedule appointments with the dermatologits to help the users in getting themselves diagnosed with real practitioner, and get their doubts resolved. This way, users can even take help from real doctors through this feature without even stepping out.
 
 # How to run the application 
+
+## Make sure you have node and npm installed. In the terminal, run the following commands:
+
+```shell
+node --version
+npm --version
+```
+
+## Install Angular CLI globally
+
+```shell
+npm install - g @angular/cli
+```
+
 
 ## Get the Code
 ```shell
@@ -22,7 +50,7 @@ git clone https://github.com/ishubham21/infinity-skncure-angular/
 cd infinity-skncure-angular
 ```
 
-## Install the required modules
+## Install the required modules/dependencies
 
 ```shell
 npm i
@@ -70,10 +98,12 @@ With **Infinity-SknCure** people get an opportunity to self-diagnose their skin 
 
 ## This app is built on the basis of previous studies conducted in this field
 
+* [World Health Organization](https://apps.who.int/iris/bitstream/handle/10665/69229/WHO_FCH_CAH_05.12_eng.pdf?sequence=1&isAllowed=y)
 * [US National Library of Medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5718374/)
 * [Science Daily Journals](https://www.sciencedaily.com/releases/2019/03/190320102041.htm#:~:text=The%20most%20common%20diagnoses%20were,of%20their%20abnormal%20skin%20findings.)
 * [WHO neglected diseases](https://www.who.int/neglected_diseases/zoonoses/en/)
-* [National Center for Biotechnology Information](https://pubmed.ncbi.nlm.nih.gov) 
+* [National Center for Biotechnology Information](https://pubmed.ncbi.nlm.nih.gov)
+* [Journal of Mahatma Gandhi Institute of Medical Sciences](https://www.jmgims.co.in/article.asp?issn=0971-9903;year=2016;volume=21;issue=2;spage=111;epage=115;aulast=Jain) 
 
 # Testimonials
 

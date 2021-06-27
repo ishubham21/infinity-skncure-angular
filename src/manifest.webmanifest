@@ -1,8 +1,8 @@
 {
   "name": "infinity-skncure",
   "short_name": "infinity-skncure",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#6794ef",
+  "background_color": "#000",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
@@ -54,6 +54,35 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "categories": [
+    "skin disease classifier",
+    "education",
+    "medical",
+    "image processing"
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": ""
+    }
+  ],
+  "prefer_related_applications": true,
+  "shortcuts": [
+    {
+      "name": "Infinity SknCure",
+      "url": "",
+      "description": "A web-based Skin Disease Predictor.",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "maskable any"
+        }
+      ]
     }
   ]
 }
