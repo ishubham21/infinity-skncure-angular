@@ -152,6 +152,13 @@ After conducting several survey and feedback sessions, we have compiled a list o
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/feedback2.png"></p>
 
+* Following are the video feedbacks received from people working in different spheres including both medical and technological.
+
+Video 1 - [Link]()
+Video 2 - [Link]()
+Video 3 - [Link]()
+Video 4 - [Link]()
+
 * This list contains both positive and negative feedbacks that have helped us in evolving this application.
 
 | Name of the user  | Organization | Feedback received |
@@ -161,9 +168,18 @@ After conducting several survey and feedback sessions, we have compiled a list o
 | Shristi Goyal | Rajiv Gandhi University of Health Sciences | As a doctor I personally don't like that much AI but yeah !! It's super cool |
 | Gagan Irani | Rajiv Gandhi University of Health Sciences | Instant information that we get is soo reliving and info about near by docs is a great feature and very helpful |
 | Mohan | Rajiv Gandhi University of Health Sciences | Its good initiative and helpful in this pandemic world. |
-| Adnan Ahmed | JJM Medical College | Pretty accurate, if take photo only of the face. 1. Real time photo of only face in lit room 100% normal. 2. Same photo imported - slightly reduced value but still near 100 3. In a dark room with flash - near 100 as well. 4. No.1 and 2 photo edited to look darker(for dark circles)- was not fooled still normal skin. 5. Photo which was taken from a distance(approx 1 m)- acne 61%. I will recommend to first run a facial recognition (finding eyes, nose, mouth,etc) to find a face, then zoom on that so it looks like a photo taken of only face.
-Then it runs the skin disease script. Although I only tried one photo but still thats a bit too much difference(the t shirt i was wearing was kinda red-pink if that had something to do with it) |
- 
+| Adnan Ahmed | JJM Medical College | Pretty accurate, if take photo only of the face. 1. Real time photo of only face in lit room 100% normal. 2. Same photo imported - slightly reduced value but still near 100 3. In a dark room with flash - near 100 as well. 4. No.1 and 2 photo edited to look darker(for dark circles)- was not fooled still normal skin. 5. Photo which was taken from a distance(approx 1 m)- acne 61%. I will recommend to first run a facial recognition (finding eyes, nose, mouth,etc) to find a face, then zoom on that so it looks like a photo taken of only face.|
+| Devesh Priyadarshini | Rajiv Gandhi University of Health Sciences | Interface was good. Had little bit issue with camera adjustment. I got only 2 options acne and normal skin. |
+| Arpita | JJM Medical College | It is a innovative approach towards helping people in need for urgent and critical diagnosis. |
+| Shail Soni | JJM Medical College | Stepping ahead into the future of AI based Diagnosis (though we need humans as doctors no matter how highly the technology is developed). Great going! |
+| Kashish Mittal | Government Medical College, Barmer |  It is a user friendly product with high end technology. |
+| Niraj | Rajiv Gandhi University of Health Sciences | Reliable and easy ways to assess skin problems |
+| Diya Vijay | Rajasthan Technical University, Kota | My favourite part of this project is it's dark Circles detection feature as I have a lot of dark circle. |
+| Abhimanyu Singh | Rajasthan Technical University, Kota | It's covered all the ideas that one good project have, like Security (storage of data in google database, login through google etc.), all the basics but important stuffs like ( Maps, OS independent, lightweight, Tips for users, insta like feature, etc.), proper use of AI, i like the project ideas and efforts. |
+| Kanishk Singh | Rajasthan Technical University, Kota | I had never thought that technology would so advanced that we will also be able to check our skin health. This is only be possible because we have developers like you. |
+| Ashi Dubey | Rajasthan Technical University | The whole host of features that you ahve put in are amazing and also easy to handle and understand making it user friendly. As for any suggestion, int the training dataset yo've put in, do include low megapixel images as well so that people who upload pictures with low quality camera can also experience near accuracies. |
+| Pradhumn Singh | Rajasthan Technical University, Kota | LOVE IT, it would be more better if you make it secure. |
+
 # Sources for dataset -
 * Dermnet NZ - [https://dermnetnz.org](https://dermnetnz.org)
 * DermIS - [https://dermis.net](https://dermis.net)
