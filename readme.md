@@ -68,7 +68,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### Version 1 had the following features: 
 
-Link to this version's code: [https://github.com/ishubham21/infinity-skncure](https://github.com/ishubham21/infinity-skncure)
+Link to version 1 repository: [https://github.com/ishubham21/infinity-skncure](https://github.com/ishubham21/infinity-skncure)
 
 * **Can Detect 11 skin diseases:** The skin diseases model has been trained to predict and differentiate between the 10 most prominent skin diseases. These diseases are Acne, Contact Dermatitis, Corn, Cutaneous Horn, Eczema, Herpes Zoster, Melanoma, Psoriasis, Rosacea, and Urticaria.
 
@@ -84,8 +84,29 @@ Link to this version's code: [https://github.com/ishubham21/infinity-skncure](ht
 
 * **Ability to search nearby dermatologists:** This version of Infinity SknCure had a feature that allowed users to search doctors near them using a simple Google Search. But this feature has now been completely turned over to provide a better experience using in-app Google Maps.
 
+### Version 2 has the following features + the features listed above:
 
-We understand the fact that not everyone completely trust the 
+* **Technologies used:** The previous version of this application was built using HTML, CSS, JavaScript, ML5, and p5.js. But the version 2 i.e. the current version is a complete re-written version. It makes use of technologies like **Angular 12, Typescript, HTML, CSS, Angular-Material, Firebase, ML5, p5.js**. This application also makes use of some of the Google APIs including **Google Maps API, Google Maps Embedded API, Google Places API.**. 
+
+* **Better User Interface:** In the earlier version of Infinity-SknCure, it only had three buttons in the middle of the screen which was though easy to use but was not asthetically pleasing. Therefore, in this version of Infinity SknCure, we have changed the UI completely to make it more close to the user. We have used #6749ef as our primary color since blue is typically associated with credibility, trust, knowledge, power, professionalism, cleanliness, calm and focus. Because all of these qualities are valued in the medical community, blue is the ideal choice for medical logos. Refer - [Serendipit Consulting](https://serendipitconsulting.com/what-is-color-theory-and-why-are-so-many-healthcare-logos-blue) 
+
+* **Google Sign-in:** We wanted to give this application a more personalised touch, we wanted it to be unique for each and every person who logs into it. Thus, this version of Infinity SknCure allows the users to sign-in with their Google accounts and get served with their respective datas.
+
+* **Disease Tracker:** You have trackers for your sleep, workouts, and meditation, but what if we say Infinity SknCure will allow you to track your skin health? Yes, this is true. With Infinity SknCure, users can easily save their prediction results and see them on a date-wise graph. This graph allows users to see and track their journey towards healthy skin.
+
+* **Infinity Community:** Skin disorders brings with them a feeling of low self esteem. They are known to show adverse effects on the mental health of the ones suffering from it. With this in mind, we have created a forum where users from different backgrounds can come together and share their journey. This feature allows the users to post images and text with no limit on it. Further, we believe in the Law of Attraction and that you can achieve anything by manifesting it. Thus, this feature can help users in achieving healthy skin.
+
+* **See a Doctor:** We understand that not everyone in this world trust Artificial Intelligence. Thus, Infinity SknCure has a feature that allows users to flexibly schedule meetings with our doctors. Whenever users register for a meeting using this feature, a google meet link is sent to them for that particular time slot. 
+
+* **Doctors Near Me:** This feature is an upgraded version of 'Nearby Doctor Search'. It allows users to search for dermatologists in their proximity. Users can easily see the location of all such dermatologists on a Google Map. Users can also see if the ratings and vicinity of all the nearby dermatologists.  
+
+* **Dark Circle Detection:** One of the most unique features that we have included in this application is the ability to predict dark circles among users. Users can simply upload the images of their eyes and get their results instantly.
+
+* **General Tips Section:** It is a playful feature that allows users to turn a flip card and reveal a new skin care tip each time the card flips. 
+
+<!-- * **Smooth experience:** Since we have used Angular as our primary front-end framework, this application reduces reloading and allows users to move from one feature to another seamlessly.   -->
+
+
 
 ## Diseases listed in the model - 
 * Acne
@@ -118,9 +139,17 @@ With **Infinity-SknCure** people get an opportunity to self-diagnose their skin 
 * [National Center for Biotechnology Information](https://pubmed.ncbi.nlm.nih.gov)
 * [Journal of Mahatma Gandhi Institute of Medical Sciences](https://www.jmgims.co.in/article.asp?issn=0971-9903;year=2016;volume=21;issue=2;spage=111;epage=115;aulast=Jain) 
 
-# Testimonials
+# Feedbacks and Testimonials
 
+After conducting several survey and feedback sessions, we have compiled a list of feedbacks and testimonials received from various users. It contains both positive and negative feedbacks that has helped us in evolving this application.
 
+* Users were asked to rate Infinity SknCure based on their personal experiences on a scale of 1 - 5. Here are the results - 
+
+<p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/feedback1.png"></p>
+
+The following graph shows the likeability (in percent) of the features among the users -
+
+<p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/feedback2.png"></p>
 
 # Sources for dataset -
 * Dermnet NZ - [https://dermnetnz.org](https://dermnetnz.org)
