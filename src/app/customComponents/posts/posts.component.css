@@ -15,6 +15,10 @@
   text-align: center;
   margin-top: 1rem;
 }
+.central-navigation{
+  border-radius: 8px;
+  transition: 0.2s;
+}
 .posts-header {
   width: 100%;
   min-height: 15rem;
@@ -77,12 +81,10 @@
   text-decoration: none;
 }
 .central-navigation > .active {
-  border-bottom: #1d4e89 solid 2px;
-  background-color: #f7f7f7;
+  border-bottom: #ff5780 solid 2px;
 }
 .navigation-tab:hover {
-  border-bottom: #1d4e89 solid 2px;
-  background-color: #f7f7f7;
+  border-bottom: #ff5780 solid 2px;
   transition: 0.1s linear;
 }
 .navigation-tab button {
