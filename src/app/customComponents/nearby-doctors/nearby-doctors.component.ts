@@ -13,9 +13,6 @@ let options = {
   maximumAge: 0,
 };
 
-let infowindow: any
-
-
 @Component({
   selector: 'app-nearby-doctors',
   templateUrl: './nearby-doctors.component.html',
@@ -67,6 +64,8 @@ export class NearbyDoctorsComponent implements OnInit {
               this.createMarker(results[i])
             }
           }
+
+          //if no doctors found, set doctors list to null
           else{
             this.doctorsList = null
           }
@@ -92,16 +91,11 @@ export class NearbyDoctorsComponent implements OnInit {
     const placeLoc = place.geometry.location;
     
     //creating markers with the following specs
-    const marker = new google.maps.Marker({
+    new google.maps.Marker({
       map: map,
       position: placeLoc,
       label: place.name,
       options: { animation: google.maps.Animation.BOUNCE }
-    });
-
-    google.maps.event.addListener(marker, 'click',  () => {
-      infowindow.setContent(place.name);
-      infowindow.open(map, this);
     });
 
   }

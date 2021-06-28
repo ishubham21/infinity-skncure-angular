@@ -53,7 +53,6 @@ import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby
 import { DiseaseTrackerComponent } from './customComponents/disease-tracker/disease-tracker.component';
 import { AppointmentsComponent } from './customComponents/appointments/appointments.component';
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
-import { GooglePlacesAutocompleteComponent } from './customComponents/google-places-autocomplete/google-places-autocomplete.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
@@ -76,7 +75,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     NearbyDoctorsComponent,
     DiseaseTrackerComponent,
     AppointmentsComponent,
-    GooglePlacesAutocompleteComponent,
   ],
   imports: [
     BrowserModule,
