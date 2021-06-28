@@ -188,7 +188,7 @@ After conducting several survey and feedback sessions, we have compiled a list o
 
     * Dr. Narendra Singh Patel (Assistant Professor, RTU Kota) - [Link]()
 
-    * Dr. Vivek (Assistant Professor, RTU Kota) - [Link]()
+    * Dr. Vikas Jain (Assistant Professor, RTU Kota) - [Link]()
 
 * This list contains both positive and negative feedbacks that have helped us in evolving this application.
 
