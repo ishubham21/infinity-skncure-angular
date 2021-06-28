@@ -36,7 +36,6 @@ import { LoginComponent } from './customComponents/login/login.component';
 import { DashboardComponent } from './customComponents/dashboard/dashboard.component';
 import { AppComponent } from './app.component';
 
-import { ProfileComponent } from './customComponents/profile/profile.component';
 import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
 import { RealTimeDetectionComponent } from './customComponents/real-time-detection/real-time-detection.component';
 import { PostsComponent } from './customComponents/posts/posts.component';
@@ -60,7 +59,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    ProfileComponent,
     DetectDiseaseComponent,
     RealTimeDetectionComponent,
     PostsComponent,
