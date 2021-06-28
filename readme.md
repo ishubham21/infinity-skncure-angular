@@ -170,16 +170,17 @@ After conducting several survey and feedback sessions, we have compiled a list o
 * Following are the organizations to which our users belong
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/orgs.png"></p>
-* Al Falah Medical College, Faridabad
-* B. J. Medical College, Pune
-* Government Medical College, Barmer
-* JJM Medical College, Davanagere
-* JLN Medical College, Ajmer
-* Maulana Azad Medical College, New Delhi
-* Rajiv Gandhi Uniersity of Health Sciences, Bangalore
-* Rajasthan Technical University, Kota
-* Manipal Academy of Higher Education, Manipal
-* Banaras Hindu University, Varanasi
+
+    * Al Falah Medical College, Faridabad
+    * B. J. Medical College, Pune
+    * Government Medical College, Barmer
+    * JJM Medical College, Davanagere
+    * JLN Medical College, Ajmer
+    * Maulana Azad Medical College, New Delhi
+    * Rajiv Gandhi Uniersity of Health Sciences, Bangalore
+    * Rajasthan Technical University, Kota
+    * Manipal Academy of Higher Education, Manipal
+    * Banaras Hindu University, Varanasi
 
 * Following are the video feedbacks received from people working in different spheres including both medical and technological.
 
