@@ -88,6 +88,7 @@ export class RealTimeDetectionComponent implements OnInit {
     if (this.classificationCanvas.nativeElement) {
       let canvas;
 
+      //to prevent multiple canvas formation
       if (!canvas) {
         canvas = new p5(sketch, this.classificationCanvas.nativeElement);
       }

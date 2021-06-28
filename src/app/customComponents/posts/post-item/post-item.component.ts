@@ -12,6 +12,7 @@ import { PostsService } from '../services/posts.service';
   styleUrls: ['./post-item.component.css'],
 })
 export class PostItemComponent implements OnInit {
+
   @Input() post: Post = {
     id: '',
     img: '',
@@ -32,7 +33,7 @@ export class PostItemComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
-
+    
   support() {
     const userId = this.authService.userData.uid;
     let post = this.postService

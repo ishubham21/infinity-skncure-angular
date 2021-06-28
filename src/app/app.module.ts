@@ -36,7 +36,6 @@ import { LoginComponent } from './customComponents/login/login.component';
 import { DashboardComponent } from './customComponents/dashboard/dashboard.component';
 import { AppComponent } from './app.component';
 
-import { ProfileComponent } from './customComponents/profile/profile.component';
 import { DetectDiseaseComponent } from './customComponents/detect-disease/detect-disease.component';
 import { RealTimeDetectionComponent } from './customComponents/real-time-detection/real-time-detection.component';
 import { PostsComponent } from './customComponents/posts/posts.component';
@@ -53,7 +52,6 @@ import { NearbyDoctorsComponent } from './customComponents/nearby-doctors/nearby
 import { DiseaseTrackerComponent } from './customComponents/disease-tracker/disease-tracker.component';
 import { AppointmentsComponent } from './customComponents/appointments/appointments.component';
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
-import { GooglePlacesAutocompleteComponent } from './customComponents/google-places-autocomplete/google-places-autocomplete.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
@@ -61,7 +59,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    ProfileComponent,
     DetectDiseaseComponent,
     RealTimeDetectionComponent,
     PostsComponent,
@@ -76,7 +73,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     NearbyDoctorsComponent,
     DiseaseTrackerComponent,
     AppointmentsComponent,
-    GooglePlacesAutocompleteComponent,
   ],
   imports: [
     BrowserModule,
