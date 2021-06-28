@@ -22,6 +22,9 @@
 .heart{
   fill: white;
 }
+.counter{
+  margin-left: 8px;
+}
 @media screen and (max-width: 760px) {
   .card-container {
     margin-right: 0rem;

@@ -13,8 +13,6 @@ import { PostsService } from '../services/posts.service';
 })
 export class PostItemComponent implements OnInit {
 
-  likeCheck: boolean = false
-
   @Input() post: Post = {
     id: '',
     img: '',
@@ -48,10 +46,8 @@ export class PostItemComponent implements OnInit {
         if (alreadyLiked) {
           post[0].supportCount.splice(post[0].supportCount.indexOf(userId), 1);
           this.postService.notSupport(post[0]);
-          this.likeCheck = true
         } else {
           this.postService.support(post[0], userId);
-          this.likeCheck = false
         }
       });
 

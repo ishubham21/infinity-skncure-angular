@@ -19,7 +19,9 @@
               
           </svg> 
         </button>
-        {{post.supportCount.length}}
+        <button mat-mini-fab color="warn" class="counter">
+          {{post.supportCount.length}}
+        </button>
       </mat-card-actions>
       <div *ngIf="myPost">
         <button mat-flat-button disabled color="primary">Support &nbsp;
@@ -28,7 +30,11 @@
                 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
           </svg> 
         </button>
-        {{post.supportCount.length}}
+        
+        <button mat-mini-fab color="warn" class="counter">
+          {{post.supportCount.length}}
+        </button>
+
       </div>
     </mat-card>
 </div>
