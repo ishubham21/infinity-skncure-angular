@@ -1,4 +1,4 @@
-# <p align="center"> Infinity SknCure</p>
+<p align="center"># Infinity SknCure</p>
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/logo.png"></p>
 
@@ -15,7 +15,7 @@
 * [Feedback and Testimonials](#feedbacks-and-testimonials)
 * [Sources of dataset](#sources-of-dataset--)
 
-#Our purpose and motivation behind Infinity SknCure
+# Our purpose and motivation behind Infinity SknCure
 
 **“The finest clothing made is a person’s own skin” – Mark Twain.**
 
@@ -123,7 +123,7 @@ Link to version 1 repository: [https://github.com/ishubham21/infinity-skncure](h
 
 
 
-## Diseases listed in the model - 
+# Diseases listed in the model - 
 * Acne
 * Herpes Zoster
 * Corn
@@ -145,7 +145,7 @@ With **Infinity-SknCure** people get an opportunity to self-diagnose their skin 
 
 [Reports](https://www.canwelivebetter.bayer.com/health/tanning-delusion-why-do-we-ignore-risks-skin-cancer) also point that men are less likely to use sunscreens which is a major reason why many people suffer from skin cancers and it again points towards the associated stigmas, and with this application, we want to fight these social stigmas.
 
-## Infinity SknCure is built on the basis of previous studies conducted in this field
+# Infinity SknCure is built on the basis of previous studies conducted in this field
 
 * [World Health Organization](https://apps.who.int/iris/bitstream/handle/10665/69229/WHO_FCH_CAH_05.12_eng.pdf?sequence=1&isAllowed=y)
 * [US National Library of Medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5718374/)
@@ -167,12 +167,27 @@ After conducting several survey and feedback sessions, we have compiled a list o
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/feedback2.png"></p>
 
+* Following are the organizations to which our users belong
+
+<p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/orgs.png"></p>
+    * Al Falah Medical College, Faridabad
+    * B. J. Medical College, Pune
+    * Government Medical College, Barmer
+    * JJM Medical College, Davanagere
+    * JLN Medical College, Ajmer
+    * Maulana Azad Medical College, New Delhi
+    * Rajiv Gandhi Uniersity of Health Sciences, Bangalore
+    * Rajasthan Technical University, Kota
+    * Manipal Academy of Higher Education, Manipal
+    * Banaras Hindu University, Varanasi
+
 * Following are the video feedbacks received from people working in different spheres including both medical and technological.
 
-Video 1 - [Link]()
-Video 2 - [Link]()
-Video 3 - [Link]()
-Video 4 - [Link]()
+    * Dr. Rashmi (Consultant Dermatologist) - [Link]()
+
+    * Dr. Narendra Singh Patel (Assistant Professor, RTU Kota) - [Link]()
+
+    * Dr. Vivek (Assistant Professor, RTU Kota) - [Link]()
 
 * This list contains both positive and negative feedbacks that have helped us in evolving this application.
 
