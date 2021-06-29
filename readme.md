@@ -187,11 +187,11 @@ After conducting several survey and feedback sessions, we have compiled a list o
 
 * Following are the video feedbacks received from people working in different spheres including both medical and technological.
 
-    * Dr. Rashmi (Consultant Dermatologist) - [Link](https://drive.google.com/file/d/1HsCKum6vpp1OvO8sJGk1qZIg0f-5mL7e/view?usp=sharing)
+    * Dr. Rashmi (Consultant Dermatologist) - [Link](https://youtu.be/IQIezRiqiHE)
 
-    * Dr. Narendra Singh Patel (Assistant Professor, RTU Kota) - [Link](https://drive.google.com/file/d/1q_57UYOGScjnnh-3UAHrXgf2WtD8OgOH/view)
+    * Dr. Narendra Singh Patel (Assistant Professor, RTU Kota) - [Link](https://youtu.be/_4-CLA2CgVs)
 
-    * Dr. Vikas Jain (Assistant Professor, RTU Kota) - [Link](https://drive.google.com/file/d/1EBH4NiEFeja5t98bdeJXE5AnH-0gRAF8/view)
+    * Dr. Vikas Jain (Assistant Professor, RTU Kota) - [Link](https://youtu.be/TB29a0dlKcI)
 
 * This list contains both positive and negative feedbacks that have helped us in evolving this application.
 
