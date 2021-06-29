@@ -12,7 +12,6 @@ import { PostsService } from '../services/posts.service';
   styleUrls: ['./post-item.component.css'],
 })
 export class PostItemComponent implements OnInit {
-
   @Input() post: Post = {
     id: '',
     img: '',
@@ -26,14 +25,31 @@ export class PostItemComponent implements OnInit {
   };
   @Input() index: number = 0;
   @Input() myPost: boolean = false;
+  liked: boolean = false;
 
   constructor(
     private postService: PostsService,
     private authService: AuthService
   ) {}
 
-  ngOnInit(): void {}
-    
+  ngOnInit(): void {
+    const userId = this.authService.userData.uid;
+
+    let post = this.postService
+      .checkSupport(this.post)
+      .pipe(take(1))
+      .subscribe((post) => {
+        const alreadyLiked = post[0].supportCount.find(
+          (support: any) => support == userId
+        );
+        if (alreadyLiked) {
+          this.liked = true;
+        } else {
+          this.liked = false;
+        }
+      });
+  }
+
   support() {
     const userId = this.authService.userData.uid;
     let post = this.postService

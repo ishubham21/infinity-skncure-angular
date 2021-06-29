@@ -19,10 +19,10 @@
   overflow-x: hidden;
   margin: 0;
 }
-.heart{
+.heart {
   fill: white;
 }
-.counter{
+.counter {
   margin-left: 8px;
 }
 @media screen and (max-width: 760px) {

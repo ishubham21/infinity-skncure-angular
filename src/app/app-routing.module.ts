@@ -23,13 +23,37 @@ const routes: Routes = [
     component: DashboardComponent,
     canActivate: [AuthGuard],
   },
-  { path: 'real-time', component: RealTimeDetectionComponent },
-  { path: 'upload-image', component: DetectDiseaseComponent },
-  { path: 'dark-circles', component: DarkCirclesComponent },
-  { path: 'nearby-doctors', component: NearbyDoctorsComponent },
-  { path: 'disease-tracker', component: DiseaseTrackerComponent },
-  { path: 'appointments', component: AppointmentsComponent },
-  { path: 'tips', component: TipsComponent },
+  {
+    path: 'real-time',
+    component: RealTimeDetectionComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'upload-image',
+    component: DetectDiseaseComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'dark-circles',
+    component: DarkCirclesComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'nearby-doctors',
+    component: NearbyDoctorsComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'disease-tracker',
+    component: DiseaseTrackerComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'appointments',
+    component: AppointmentsComponent,
+    canActivate: [AuthGuard],
+  },
+  { path: 'tips', component: TipsComponent, canActivate: [AuthGuard] },
   {
     path: 'posts',
     component: PostsComponent,
@@ -37,10 +61,12 @@ const routes: Routes = [
       { path: '', component: CommunityPostsComponent },
       { path: 'me', component: MyPostsComponent },
     ],
+    canActivate: [AuthGuard],
   },
   {
     path: 'new',
     component: NewPostComponent,
+    canActivate: [AuthGuard],
   },
 ];
 
