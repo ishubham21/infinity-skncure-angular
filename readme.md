@@ -1,4 +1,4 @@
-<p align="center"># Infinity SknCure</p>
+# Infinity SknCure
 
 <p align="center"><img src="https://github.com/ishubham21/infinity-skncure-angular/blob/master/readme-assets/logo.png"></p>
 
@@ -13,6 +13,7 @@
 * [Do we even need this application?](#do-we-even-need-this-application)
 * [Research guides for Infinity SknCure](infinity-skncure-is-built-on-the-basis-of-previous-studies-conducted-in-this-field)
 * [Feedback and Testimonials](#feedbacks-and-testimonials)
+* [Future Plans](#future-plans)
 * [Sources of dataset](#sources-of-dataset--)
 
 # Our purpose and motivation behind Infinity SknCure
@@ -101,15 +102,15 @@ Link to version 1 repository: [https://github.com/ishubham21/infinity-skncure](h
 
 ### Version 2 has the following features + the features listed above:
 
-* **Technologies used:** The previous version of this application was built using HTML, CSS, JavaScript, ML5, and p5.js. But the version 2 i.e. the current version is a complete re-written version. It makes use of technologies like **Angular 12, Typescript, HTML, CSS, Angular-Material, Firebase, ML5, p5.js**. This application also makes use of some of the Google APIs including **Google Maps API, Google Maps Embedded API, Google Places API.**. 
+* **Technologies used:** The previous version of this application was built using HTML, CSS, JavaScript, ML5, and p5.js. But the version 2 i.e. the current version is a completely rewritten version. It makes use of technologies like **Angular 12, Typescript, HTML, CSS, Angular-Material, Firebase, ML5, p5.js**. This application also makes use of some of the Google APIs including **Google Maps API, Google Maps Embedded API, Google Places API.**. 
 
-* **Better User Interface:** In the earlier version of Infinity-SknCure, it only had three buttons in the middle of the screen which was though easy to use but was not asthetically pleasing. Therefore, in this version of Infinity SknCure, we have changed the UI completely to make it more close to the user. We have used #6749ef as our primary color since blue is typically associated with credibility, trust, knowledge, power, professionalism, cleanliness, calm and focus. Because all of these qualities are valued in the medical community, blue is the ideal choice for medical logos. Refer - [Serendipit Consulting](https://serendipitconsulting.com/what-is-color-theory-and-why-are-so-many-healthcare-logos-blue) 
+* **Better User Interface:** In the earlier version of Infinity-SknCure, it only had three buttons in the middle of the screen which was though easy to use but was not aesthetically pleasing. Therefore, in this version of Infinity SknCure, we have changed the UI completely to make it closer to the user. We have used #6749ef as our primary color since blue is typically associated with credibility, trust, knowledge, power, professionalism, cleanliness, calm, and focus. Because all of these qualities are valued in the medical community, blue is the ideal choice for medical logos. Refer - [Serendipit Consulting](https://serendipitconsulting.com/what-is-color-theory-and-why-are-so-many-healthcare-logos-blue) 
 
-* **Google Sign-in:** We wanted to give this application a more personalised touch, we wanted it to be unique for each and every person who logs into it. Thus, this version of Infinity SknCure allows the users to sign-in with their Google accounts and get served with their respective datas.
+* **Google Sign-in:** We wanted to give this application a more personalized touch, we wanted it to be unique for each and every person who logs into it. Thus, this version of Infinity SknCure allows the users to sign in with their Google accounts and get served with their respective data.
 
 * **Disease Tracker:** You have trackers for your sleep, workouts, and meditation, but what if we say Infinity SknCure will allow you to track your skin health? Yes, this is true. With Infinity SknCure, users can easily save their prediction results and see them on a date-wise graph. This graph allows users to see and track their journey towards healthy skin.
 
-* **Infinity Community:** Skin disorders brings with them a feeling of low self esteem. They are known to show adverse effects on the mental health of the ones suffering from it. With this in mind, we have created a forum where users from different backgrounds can come together and share their journey. This feature allows the users to post images and text with no limit on it. Further, we believe in the Law of Attraction and that you can achieve anything by manifesting it. Thus, this feature can help users in achieving healthy skin.
+* **Infinity Community:** Skin disorders brings with them a feeling of low self-esteem. They are known to show adverse effects on the mental health of the ones suffering from it. With this in mind, we have created a forum where users from different backgrounds can come together and share their journey. This feature allows the users to post images and text with no limit on it. Further, we believe in the Law of Attraction and that you can achieve anything by manifesting it. Thus, this feature can help users in achieving healthy skin.
 
 * **See a Doctor:** We understand that not everyone in this world trust Artificial Intelligence. Thus, Infinity SknCure has a feature that allows users to flexibly schedule meetings with our doctors. Whenever users register for a meeting using this feature, a google meet link is sent to them for that particular time slot. 
 
@@ -117,7 +118,9 @@ Link to version 1 repository: [https://github.com/ishubham21/infinity-skncure](h
 
 * **Dark Circle Detection:** One of the most unique features that we have included in this application is the ability to predict dark circles among users. Users can simply upload the images of their eyes and get their results instantly.
 
-* **General Tips Section:** It is a playful feature that allows users to turn a flip card and reveal a new skin care tip each time the card flips. 
+* **General Tips Section:** It is a playful feature that allows users to turn a flip card and reveal a new skincare tip each time the card flips. 
+
+* **Free for all:** We are aimed to serve the community and we want everyone to be able to make use of this application equally. Thus, we would only be pairing up with the dermatologists who are willing to serve our users under charity. 
 
 <!-- * **Smooth experience:** Since we have used Angular as our primary front-end framework, this application reduces reloading and allows users to move from one feature to another seamlessly.   -->
 
@@ -184,11 +187,11 @@ After conducting several survey and feedback sessions, we have compiled a list o
 
 * Following are the video feedbacks received from people working in different spheres including both medical and technological.
 
-    * Dr. Rashmi (Consultant Dermatologist) - [Link]()
+    * Dr. Rashmi (Consultant Dermatologist) - [Link](https://drive.google.com/file/d/1HsCKum6vpp1OvO8sJGk1qZIg0f-5mL7e/view?usp=sharing)
 
-    * Dr. Narendra Singh Patel (Assistant Professor, RTU Kota) - [Link]()
+    * Dr. Narendra Singh Patel (Assistant Professor, RTU Kota) - [Link](https://drive.google.com/file/d/1q_57UYOGScjnnh-3UAHrXgf2WtD8OgOH/view)
 
-    * Dr. Vivek (Assistant Professor, RTU Kota) - [Link]()
+    * Dr. Vivek (Assistant Professor, RTU Kota) - [Link](https://drive.google.com/file/d/1EBH4NiEFeja5t98bdeJXE5AnH-0gRAF8/view)
 
 * This list contains both positive and negative feedbacks that have helped us in evolving this application.
 
@@ -211,7 +214,18 @@ After conducting several survey and feedback sessions, we have compiled a list o
 | Ashi Dubey | Rajasthan Technical University | The whole host of features that you ahve put in are amazing and also easy to handle and understand making it user friendly. As for any suggestion, int the training dataset yo've put in, do include low megapixel images as well so that people who upload pictures with low quality camera can also experience near accuracies. |
 | Pradhumn Singh | Rajasthan Technical University, Kota | LOVE IT, it would be more better if you make it secure. |
 
+# Future Plans
+
+In line with the mission and the goals of Infinity SknCure, following are our future plans in order to expand this application - 
+
+* **Multi-language support:** We want to make skincare available for all. To achieve this, we are planning to serve Infinity SknCure in 10+ most spoken languages throughout the world using Google Cloud Translate API. This would allow users from all over the world to use Infinity SknCure in their own native languages.
+
+* **Separate login for Dermatologists:** We want to make this application flexible for both the doctors and users. Thus, expanding Infinity SknCure in this direction would allow doctors to make their personalized calendars and list themselves on the application. This feature would also help our team in onboarding the doctors easily. 
+
+* **Emotional Chatbot:** We are on a mission to help people not only physically but also mentally. Therefore, in the next edition of Infinity SknCure, we would be enabling an emotionally intelligent chatbot with whom users would be able to chat, speak about their problems and get human-like advice.
+
 # Sources of dataset -
+
 * Dermnet NZ - [https://dermnetnz.org](https://dermnetnz.org)
 * DermIS - [https://dermis.net](https://dermis.net)
 * Dermatology Atlas - [http://www.atlasdermatologico.com.br/browse.jsf](http://www.atlasdermatologico.com.br/browse.jsf)
