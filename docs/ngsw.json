@@ -1,0 +1,119 @@
+{
+  "configVersion": 1,
+  "timestamp": 1624979731799,
+  "index": "infinity-skncure-angular/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "infinity-skncure-angular/favicon.ico",
+        "infinity-skncure-angular/index.html",
+        "infinity-skncure-angular/main.9ec14c64a226d8f7e6b4.js",
+        "infinity-skncure-angular/manifest.webmanifest",
+        "infinity-skncure-angular/polyfills.83b8b14a61d9887d1ac7.js",
+        "infinity-skncure-angular/runtime.67ed7875d3f12c5b5849.js",
+        "infinity-skncure-angular/scripts.390544378bb994681f2d.js",
+        "infinity-skncure-angular/styles.85a59b59b0564af51c25.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "infinity-skncure-angular/assets/icons/icon-128x128.png",
+        "infinity-skncure-angular/assets/icons/icon-144x144.png",
+        "infinity-skncure-angular/assets/icons/icon-152x152.png",
+        "infinity-skncure-angular/assets/icons/icon-192x192.png",
+        "infinity-skncure-angular/assets/icons/icon-384x384.png",
+        "infinity-skncure-angular/assets/icons/icon-512x512.png",
+        "infinity-skncure-angular/assets/icons/icon-72x72.png",
+        "infinity-skncure-angular/assets/icons/icon-96x96.png",
+        "infinity-skncure-angular/assets/images/bg-login.png",
+        "infinity-skncure-angular/assets/images/dermatology-login.png",
+        "infinity-skncure-angular/assets/images/img2.png",
+        "infinity-skncure-angular/assets/images/loader.gif",
+        "infinity-skncure-angular/assets/images/topillus-mob.png",
+        "infinity-skncure-angular/assets/images/topillus.png",
+        "infinity-skncure-angular/assets/ml-js/ml5.min.js",
+        "infinity-skncure-angular/assets/ml-js/p5.dom.min.js",
+        "infinity-skncure-angular/assets/ml-js/p5.js",
+        "infinity-skncure-angular/assets/ml-js/p5.sound.min.js",
+        "infinity-skncure-angular/assets/model/dark-circles/metadata.json",
+        "infinity-skncure-angular/assets/model/dark-circles/model.json",
+        "infinity-skncure-angular/assets/model/dark-circles/model.weights.bin",
+        "infinity-skncure-angular/assets/model/skin-diseases/metadata.json",
+        "infinity-skncure-angular/assets/model/skin-diseases/model.json",
+        "infinity-skncure-angular/assets/model/skin-diseases/model.weights.bin",
+        "infinity-skncure-angular/topillus-mob.3f834111aa2d4ea5b95c.png",
+        "infinity-skncure-angular/topillus.21f15318bdf350445a93.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "infinity-skncure-angular/assets/icons/icon-128x128.png": "8ded89d584e549229fdf8fd03b3b9476301b7fe4",
+    "infinity-skncure-angular/assets/icons/icon-144x144.png": "8ded89d584e549229fdf8fd03b3b9476301b7fe4",
+    "infinity-skncure-angular/assets/icons/icon-152x152.png": "8ded89d584e549229fdf8fd03b3b9476301b7fe4",
+    "infinity-skncure-angular/assets/icons/icon-192x192.png": "8ded89d584e549229fdf8fd03b3b9476301b7fe4",
+    "infinity-skncure-angular/assets/icons/icon-384x384.png": "8ded89d584e549229fdf8fd03b3b9476301b7fe4",
+    "infinity-skncure-angular/assets/icons/icon-512x512.png": "8ded89d584e549229fdf8fd03b3b9476301b7fe4",
+    "infinity-skncure-angular/assets/icons/icon-72x72.png": "8ded89d584e549229fdf8fd03b3b9476301b7fe4",
+    "infinity-skncure-angular/assets/icons/icon-96x96.png": "8ded89d584e549229fdf8fd03b3b9476301b7fe4",
+    "infinity-skncure-angular/assets/images/bg-login.png": "185a80a71f10ad68e9473bcc12f14d4ff3e8b184",
+    "infinity-skncure-angular/assets/images/dermatology-login.png": "3962fc88472f34e4c4c638bb008f85462cfae912",
+    "infinity-skncure-angular/assets/images/img2.png": "9848547e9ff87dff1d98697b77c4e4a373ecb6c7",
+    "infinity-skncure-angular/assets/images/loader.gif": "2b26eaf6895561042bdae7ee8c9c345a8428a711",
+    "infinity-skncure-angular/assets/images/topillus-mob.png": "03bfafe87b777345d6f5876408b24eea2d64124d",
+    "infinity-skncure-angular/assets/images/topillus.png": "ff4e5fc00112fd24d83af926310adc62721810e7",
+    "infinity-skncure-angular/assets/ml-js/ml5.min.js": "4cdcc17763d3acdf8827eab8cf7f7ec000dd4b45",
+    "infinity-skncure-angular/assets/ml-js/p5.dom.min.js": "01b26b09cfb25d93d0f68b257fa246b2cd348742",
+    "infinity-skncure-angular/assets/ml-js/p5.js": "2c222eb6df927c8f6d44ae5c70799fac4da74155",
+    "infinity-skncure-angular/assets/ml-js/p5.sound.min.js": "8b530ff2167cfa8d456682efaa9451881d309c81",
+    "infinity-skncure-angular/assets/model/dark-circles/metadata.json": "a8531e9a1e117b4e2f90b103ff08080c026fa497",
+    "infinity-skncure-angular/assets/model/dark-circles/model.json": "ee131e8bc0b14816919c40fc2c50c417ebde437d",
+    "infinity-skncure-angular/assets/model/dark-circles/model.weights.bin": "c2fd2867be37c5b572d776383d4738f74bc266f4",
+    "infinity-skncure-angular/assets/model/skin-diseases/metadata.json": "5c68794e9af3acf9a852315fbc77e132897a899b",
+    "infinity-skncure-angular/assets/model/skin-diseases/model.json": "2f8072e33ac1560853e57d40af366c713389a30a",
+    "infinity-skncure-angular/assets/model/skin-diseases/model.weights.bin": "cd6c65b82a372d292804325976f7a6a0466b4501",
+    "infinity-skncure-angular/favicon.ico": "5b05ee1c3e62370ce6a302f63cda9be2ced67752",
+    "infinity-skncure-angular/index.html": "14b6d1844e0d085c36a5d80a82a16bd4ded0cac8",
+    "infinity-skncure-angular/main.9ec14c64a226d8f7e6b4.js": "e9f74a631c83b44469717beb1a16fab0cb2ce9d7",
+    "infinity-skncure-angular/manifest.webmanifest": "93c432b56a2d71dc8ac0e50b98d621c55ceec3d8",
+    "infinity-skncure-angular/polyfills.83b8b14a61d9887d1ac7.js": "843454f775f889cddd9828e06dcc3ddfeaec838b",
+    "infinity-skncure-angular/runtime.67ed7875d3f12c5b5849.js": "5acbed1f7d445c149ddb40362163ad8a25cd9e3d",
+    "infinity-skncure-angular/scripts.390544378bb994681f2d.js": "dafd9c4e7f32f83dac13e3b0ed6a8d7d3432af5f",
+    "infinity-skncure-angular/styles.85a59b59b0564af51c25.css": "727a3e0cc8eb071b0bc78a88196574971b06e185",
+    "infinity-skncure-angular/topillus-mob.3f834111aa2d4ea5b95c.png": "03bfafe87b777345d6f5876408b24eea2d64124d",
+    "infinity-skncure-angular/topillus.21f15318bdf350445a93.png": "ff4e5fc00112fd24d83af926310adc62721810e7"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
