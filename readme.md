@@ -36,7 +36,7 @@ In a world where skin diseases have a stigma around them and are treated as tabo
 
 Talking about India, [reports](https://www.jmgims.co.in/article.asp?issn=0971-9903;year=2016;volume=21;issue=2;spage=111;epage=115;aulast=Jain) show that the prevalence of skin diseases is around 60%. In other words, about 60% of the population in the age band of 21 and 55 suffer from a skin disorder. This data makes skin disorders even more alarming, yet people choose to self-diagnose themselves which can make these disorders even worse. With Infinity SknCure, we are aimed to deliver the right diagnosis to people all around the world.      
 
-Using Infinity SknCure doesn't require any knowledge of prior knowledge. It is as easy as using your Gmail application.   
+Using Infinity SknCure doesn't require any prior knowledge. It is as easy as using your Gmail application.   
 
 Infinity SknCure can be used as a native application by users to predict their skin disorders just by uploading a picture of their skin. This application makes use of a machine learning model trained to identify 10 different skin diseases. The real-time detection support in Infinity SknCure allows users to even use their cameras and get instant results right in front of them. 
 
@@ -45,7 +45,7 @@ Further, Infinity SknCure also recommends nearby doctors automatically by using 
 We've also included a feature with which users can schedule appointments with the dermatologist to help the users in getting themselves diagnosed with a real practitioner, and get their doubts resolved. This way, users can even take help from real doctors through this feature without even stepping out.
 
 # How to run the application 
-### Direct Usage (Progressive web app)
+### Using the Progressive Web Application
 
 You can use this link to navigate through the website- [Infinity SknCure Website](https://infinity-skncure-angular-team.web.app/) 
 
@@ -54,16 +54,7 @@ You can use this link to navigate through the website- [Infinity SknCure Website
  * Wait for the device to install the app. 
  * An app with the name *Infinity-Skncure* will be visible on your home screen.
 
-### Direct Usage (Progressive web app)
-
-You can use this link to navigate through the website- [Infinity SknCure Website](https://infinity-skncure-angular-team.web.app/) 
-
- * Head on to the same website mentioned above on your device.
- * In the browser options, search for the 'Add to home screen'/'Install App' option and tap it. (You'll find an install button in the address bar if you're using Chrome on windows/mac).
- * Wait for the device to install the app. 
- * An app with the name **Infinity-Skncure** will be visible on your home screen.
-
-
+## Running Infinity SknCure on local server
 ### Make sure you have node and npm installed. In the terminal, run the following commands:
 
 ```shell
@@ -128,7 +119,7 @@ Link to version 1 repository: [https://github.com/ishubham21/infinity-skncure](h
 
 * **Disease Tracker:** You have trackers for your sleep, workouts, and meditation, but what if we say Infinity SknCure will allow you to track your skin health? Yes, this is true. With Infinity SknCure, users can easily save their prediction results and see them on a date-wise graph. This graph allows users to see and track their journey towards healthy skin.
 
-* **Infinity Community:** Skin disorders brings with them a feeling of low self-esteem. They are known to show adverse effects on the mental health of the ones suffering from it. With this in mind, we have created a forum where users from different backgrounds can come together and share their journey. This feature allows the users to post images and text with no limit on it. Further, we believe in the Law of Attraction and that you can achieve anything by manifesting it. Thus, this feature can help users in achieving healthy skin.
+* **Infinity Community:** Skin disorders brings with them a feeling of low self-esteem. They are known to show adverse effects on the mental health of the ones suffering from it. With this in mind, we have created a forum where users from different backgrounds can come together and share their journey. This feature allows the users to post images and text with no limit on it. Further, we believe in the Law of Attraction and that you can achieve anything by manifesting it. Thus, this feature can help users in achieving healthy skin. Infinity Community also let users to post their content in private mode allowing them to use Infinity SknCure as a personal diary
 
 * **See a Doctor:** We understand that not everyone in this world trust Artificial Intelligence. Thus, Infinity SknCure has a feature that allows users to flexibly schedule meetings with our doctors. Whenever users register for a meeting using this feature, a google meet link is sent to them for that particular time slot. 
 
