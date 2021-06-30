@@ -21,6 +21,8 @@
 }
 .heart {
   fill: white;
+  height: 35px;
+  width: 24px;
 }
 .counter {
   margin-left: 8px;
