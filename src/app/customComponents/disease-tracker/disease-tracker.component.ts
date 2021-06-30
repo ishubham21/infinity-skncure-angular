@@ -54,7 +54,6 @@ export class DiseaseTrackerComponent implements OnInit {
       d.setDate(d.getDate() - i);
       result.push(d.getDate() + ' ' + monthNames[d.getMonth()]);
     }
-    console.log(result);
     this.labels = result;
   }
 
