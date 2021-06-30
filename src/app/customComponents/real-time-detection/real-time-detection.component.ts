@@ -60,6 +60,7 @@ export class RealTimeDetectionComponent implements OnInit {
 
         // Create the video - using the webcam
         this.video = p5.createCapture(this.constraints);
+        this.video.size(640, 520);
         this.video.hide();
 
         classifyVideo();
@@ -72,7 +73,7 @@ export class RealTimeDetectionComponent implements OnInit {
         p5.background(0);
 
         // Draw the video
-        p5.image(this.video, 0, 0);
+        p5.image(this.video, 0, 0, 640, 520);
 
         // STEP 4: Draw the label
         p5.textSize(32);
