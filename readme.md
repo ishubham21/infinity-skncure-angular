@@ -210,6 +210,8 @@ After conducting several survey and feedback sessions, we have compiled a list o
     * Dr. Narendra Singh Patel (Assistant Professor, RTU Kota) - [Link](https://youtu.be/_4-CLA2CgVs)
 
     * Dr. Vikas Jain (Assistant Professor, RTU Kota) - [Link](https://youtu.be/TB29a0dlKcI)
+ 
+    * Ms. Iman Mohi (DSC Lead, RTU Kota) - [Link](https://youtu.be/au49dyDeDyk)
 
 * This list contains both positive and negative feedbacks that have helped us in evolving this application.
 
