@@ -119,13 +119,11 @@ Link to version 1 repository: [https://github.com/ishubham21/infinity-skncure](h
 
 * **Disease Tracker:** You have trackers for your sleep, workouts, and meditation, but what if we say Infinity SknCure will allow you to track your skin health? Yes, this is true. With Infinity SknCure, users can easily save their prediction results and see them on a date-wise graph. This graph allows users to see and track their journey towards healthy skin.
 
-* **Infinity Community:** Skin disorders brings with them a feeling of low self-esteem. They are known to show adverse effects on the mental health of the ones suffering from it. With this in mind, we have created a forum where users from different backgrounds can come together and share their journey. This feature allows the users to post images and text with no limit on it. Further, we believe in the Law of Attraction and that you can achieve anything by manifesting it. Thus, this feature can help users in achieving healthy skin. Infinity Community also let users to post their content in private mode allowing them to use Infinity SknCure as a personal diary
+* **Infinity Connect:** Skin disorders brings with them a feeling of low self-esteem. They are known to show adverse effects on the mental health of the ones suffering from it. With this in mind, we have created a forum where users from different backgrounds can come together and share their journey. This feature allows the users to post images and text with no limit on it. Further, we believe in the Law of Attraction and that you can achieve anything by manifesting it. Thus, this feature can help users in achieving healthy skin. Infinity Community also let users to post their content in private mode allowing them to use Infinity SknCure as a personal diary
 
 * **See a Doctor:** We understand that not everyone in this world trust Artificial Intelligence. Thus, Infinity SknCure has a feature that allows users to flexibly schedule meetings with our doctors. Whenever users register for a meeting using this feature, a google meet link is sent to them for that particular time slot. 
 
 * **Doctors Near Me:** This feature is an upgraded version of 'Nearby Doctor Search'. It allows users to search for dermatologists in their proximity. Users can easily see the location of all such dermatologists on a Google Map. Users can also see if the ratings and vicinity of all the nearby dermatologists.  
-
-* **Dark Circle Detection:** One of the most unique features that we have included in this application is the ability to predict dark circles among users. Users can simply upload the images of their eyes and get their results instantly.
 
 * **General Tips Section:** It is a playful feature that allows users to turn a flip card and reveal a new skincare tip each time the card flips. 
 
