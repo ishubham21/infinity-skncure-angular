@@ -16,7 +16,9 @@ export class PostsService {
   userPosts!: Observable<Post[]>;
 
   constructor(private afs: AngularFirestore, private authService: AuthService) {
-    this.postsCollection = afs.collection('posts');
+    this.postsCollection = afs.collection('posts', (ref) =>
+      ref.orderBy('createdAt', 'desc')
+    );
     // .snapshotChanges() returns a DocumentChangeAction[], which contains
     // a lot of information about "what happened" with each change. If you want to
     // get the data and the id use the map operator.
@@ -38,7 +40,9 @@ export class PostsService {
   getMyPosts() {
     this.userPosts = this.afs
       .collection('posts', (ref) =>
-        ref.where('owner', '==', this.authService.userData.uid)
+        ref
+          .where('owner', '==', this.authService.userData.uid)
+          .orderBy('createdAt', 'desc')
       )
       .snapshotChanges()
       .pipe(
