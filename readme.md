@@ -46,6 +46,16 @@ We've also included a feature with which users can schedule appointments with th
 
 # How to run the application 
 
+### Direct Usage (Progressive web app)
+
+You can use this link to navigate through the website- [Infinity SknCure Website](https://infinity-skncure-angular-team.web.app/) 
+
+ * Head on to the same website mentioned above on your device.
+ * In the browser options, search for the 'Add to home screen'/'Install App' option and tap it. (You'll find an install button in the address bar if you're using Chrome on windows/mac).
+ * Wait for the device to install the app. 
+ * An app with the name **Infinity-Skncure** will be visible on your home screen.
+
+
 ### Make sure you have node and npm installed. In the terminal, run the following commands:
 
 ```shell

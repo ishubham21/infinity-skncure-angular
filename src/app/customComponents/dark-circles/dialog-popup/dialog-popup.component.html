@@ -1,14 +1,19 @@
 <h2 mat-dialog-title>Your Results</h2>
-<mat-dialog-content>
-    <div>
-        Prediction: {{predictionData.disease}}
-    </div>
-    <div>
-        Confidence: {{predictionData.confidence}}
-    </div>
-</mat-dialog-content>
+<div *ngIf="predictionData;else spinner">
+    <mat-dialog-content>
+        <div>
+            Prediction: {{predictionData.disease}}
+        </div>
+        <div>
+            Confidence: {{predictionData.confidence}}
+        </div>
+    </mat-dialog-content>
+    
+    <mat-dialog-actions>
+        <button mat-button mat-dialog-close mat-dialog-close="false">Close</button>
+    </mat-dialog-actions>
+</div>
 
-<mat-dialog-actions>
-    <button mat-button>Save</button>
-    <button mat-button mat-dialog-close mat-dialog-close="false">Close</button>
-</mat-dialog-actions>
+<ng-template #spinner>
+    <mat-spinner></mat-spinner>
+</ng-template>

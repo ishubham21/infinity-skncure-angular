@@ -48,8 +48,6 @@ export class TrackerService {
     userExists.pipe(take(1)).subscribe((doc) => {
       // Checking if the user has already saved its prediction
       if (doc.length !== 0) {
-        console.log('exists');
-        console.log(Object.values(doc[0].illness));
         const trackerDoc = this.afs.doc(`tracker/${doc[0].id}`);
         // Checking whether already tested the same day for the same disease
         let newIllnessArray = Object.values(doc[0].illness).filter(
@@ -64,12 +62,10 @@ export class TrackerService {
         // Adding new pridiction
         newIllnessArray.push(...newIllnessArray2);
         newIllnessArray.push(illnessObject);
-        console.log(newIllnessArray);
         trackerDoc.update({ illness: newIllnessArray });
         this.saved = true;
         this.router.navigate(['/disease-tracker']);
       } else {
-        console.log('Not exists');
         this.diseaseCollection.add(disease).then((docref: any) => {
           const trackerDoc = this.afs.doc(`tracker/${docref.id}`);
           trackerDoc.update({ id: docref.id });
