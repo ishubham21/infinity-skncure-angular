@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "infinity-skncure-angular-team": {
+      "hosting": {
+        "infinity-skncure": [
+          "infinity-skncure-angular-team"
+        ]
+      }
+    }
+  }
+}

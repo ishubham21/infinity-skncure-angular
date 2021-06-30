@@ -1,6 +1,6 @@
 {
-  "name": "infinity-skncure",
-  "short_name": "infinity-skncure",
+  "name": "Infinity Skncure",
+  "short_name": "Infinity Skncure",
   "theme_color": "#6794ef",
   "background_color": "#000",
   "display": "standalone",
@@ -66,14 +66,14 @@
   "related_applications": [
     {
       "platform": "webapp",
-      "url": ""
+      "url": "https://infinity-skncure-angular-team.web.app/"
     }
   ],
   "prefer_related_applications": true,
   "shortcuts": [
     {
       "name": "Infinity SknCure",
-      "url": "",
+      "url": "https://infinity-skncure-angular-team.web.app/",
       "description": "A web-based Skin Disease Predictor.",
       "icons": [
         {

@@ -92,6 +92,10 @@ export class DarkCirclesComponent implements OnInit {
     //subscribing to the changes produced - button click in this case
     this.predictEvt.subscribe(async () => {
 
+      let dialogRef = this.dialog.open(DialogPopupComponent, {
+        data: null
+      });
+
       //ml5 function to classify the image - takes the image element and a callback function
       await this.classifier.classify(this.previewImg.nativeElement, (error: any, results: any) => {
         if (error) {
@@ -103,11 +107,15 @@ export class DarkCirclesComponent implements OnInit {
         this.confidenceOnPrediction = (results[0].confidence * 100).toFixed(2)
         this.labelOfPrediction = results[0].label
 
-        //creating a reference for dialog and subscribing to the changes
-        let dialogRef = this.dialog.open(DialogPopupComponent, { data: { disease: this.labelOfPrediction, confidence: this.confidenceOnPrediction } })
-
+        //if dialog reference exists, update the predictionData element which is present in the popup
+        if (dialogRef && dialogRef.componentInstance) {
+          dialogRef.componentInstance.predictionData = {
+            disease: this.labelOfPrediction.toUpperCase(),
+            confidence: this.confidenceOnPrediction
+          }
+        }
         dialogRef.afterClosed().subscribe(result => {
-          console.log(result)
+          
         })
 
       })

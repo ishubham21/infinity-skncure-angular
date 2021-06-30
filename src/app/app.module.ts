@@ -19,6 +19,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatSliderModule } from "@angular/material/slider";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ChartsModule } from 'ng2-charts';
@@ -93,6 +94,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     MatCardModule,
     MatGridListModule,
     MatSlideToggleModule,
+    MatProgressSpinnerModule,
     AngularFireStorageModule,
     GoogleMapsModule,
     GooglePlaceModule,

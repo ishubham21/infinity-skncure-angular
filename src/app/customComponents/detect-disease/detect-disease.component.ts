@@ -91,12 +91,12 @@ export class DetectDiseaseComponent implements OnInit {
     this.predictEvt.emit();
 
     //subscribing to the changes produced - button click in this case
-    this.predictEvt.subscribe(
-      async () => {
+    this.predictEvt.subscribe(async () => {
         //ml5 function to classify the image - takes the image element and a callback function
-        await this.classifier.classify(
-          this.previewImg.nativeElement,
-          (error: any, results: any) => {
+      let dialogRef = this.dialog.open(ResultPopupComponent, {
+        data: null
+      });
+        await this.classifier.classify(this.previewImg.nativeElement, (error: any, results: any) => {
             if (error) {
               console.error(error);
               return;
@@ -106,13 +106,13 @@ export class DetectDiseaseComponent implements OnInit {
             this.confidenceOnDisease = (results[0].confidence * 100).toFixed(2);
             this.labelOfDisease = results[0].label;
 
-            //creating a reference for dialog and subscribing to the changes
-            let dialogRef = this.dialog.open(ResultPopupComponent, {
-              data: {
-                disease: this.labelOfDisease,
-                confidence: this.confidenceOnDisease,
-              },
-            });
+            //if dialog reference exists, update the predictionData element which is present in the popup
+            if(dialogRef && dialogRef.componentInstance){
+              dialogRef.componentInstance.predictionData = {
+                disease: this.labelOfDisease.toUpperCase(),
+                confidence: this.confidenceOnDisease
+              }
+            }
 
             dialogRef.afterClosed().subscribe((result) => {
               if (result) {
